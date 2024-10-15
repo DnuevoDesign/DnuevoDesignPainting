@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dnuevo Design Painting</title>
 
-    <link rel="stylesheet" href="../../public/styles/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+    <script src="/client/public/custom-tags/nav-bar.js" ></script>
+    <script src="/client/public/custom-tags/carousel-site-reviews.js"></script>
 
     <style>
       html,
@@ -13,38 +18,91 @@
          margin: 0;
          
       }
+
+      #home {
+         position: relative;
+         top: 0;
+
+         background-color: brown;
+
+         padding: 100px 0px 100px 10px;
+
+         h1 {
+            font-size: 25px;
+
+            margin: 10px 0px;
+         }
+         h2 {
+            margin: 0;
+            
+            font-size: 35px;
+         }
+      }
+
+      #mainCarouselContainer{
+         overflow: hidden;
+      }
+      .cardCarouselContainer {
+         display: flex;
+
+
+         margin: 20px 0px;
+
+         animation-name: cardCarousel;
+         animation-duration: 10000ms;
+         animation-timing-function: linear;
+         animation-iteration-count: infinite;
+      }
+
+      @keyframes cardCarousel {
+         0% { transform: translate(100vw) }
+         100% { transform: translate(-150vw);}
+      }
+
     </style>
     
 </head>
 <body>
-   <nav class='mainNavBar'>
-      <div class="contactInfo">
-         <span><a href="tel:8883835134">Call at: (888)383-5134</a></span>
-         <span><a href="">CONTACT</a></span>
-      </div>
 
-      <div class="middleContainer">
-         <span>
-            <img src="https://speedy.uenicdn.com/e593fd58-da1a-490f-8995-4d98a46c7b1c/n200_54a/image/upload/v1690501073/business/e5fbedd2-a5d9-4605-96bc-c0ff06dcdfaa.png" alt="Company Logo" />
-         </span>
-         <button class="hamburgerButton">
-               <div class="bar1"></div>
-               <div class="bar2"></div>
-               <div class="bar3"></div>
-         </button>
-      </div>
+   <nate-nav-bar></nate-nav-bar>
+   <section id="home">
+      <main>
+         <h1>Dnuevo Design</h1>
+         <h2>Expert Painting Solutions</h2>
+         <h2>for every space</h2>
+      </main>
+   </section>
 
-      <div class="navbar-list ">
-         <ul>
-            <li><a href="/">HOME</a></li>
-            <li><a href="/#service">SERVICE</a></li>
-            <li><a href="/#gallery">OUR WORK</a></li>
-            <li><a href="/#testimonial">TESTIMONIAL</a></li>
-         </ul>
-      </div>
+   <section id="mainCarouselContainer">
+      <main class="cardCarouselContainer">
 
-   </nav>
+         <nate-carousel-card
+            siteLogo = "/client/public/images/logo/google-icon.png"
+            rating = "5"
+         ></nate-carousel-card>
+   
+         <nate-carousel-card
+               siteLogo = "/client/public/images/logo/yelp-icon.png"
+               rating = "5"
+         ></nate-carousel-card>
+   
+         <nate-carousel-card
+            siteLogo = "/client/public/images/logo/angie-list-icon.png"
+            rating = "5"
+         ></nate-carousel-card>
+   
+         <nate-carousel-card
+            siteLogo = "/client/public/images/logo/home-advisor-icon.png"
+            rating = "5"
+         ></nate-carousel-card>
 
-   <script src="../../public/scripts/navbar.js"></script>
+      </main>
+   </section>
+   
+   <section>
+      
+   </section>
+
+
 </body>
 </html>

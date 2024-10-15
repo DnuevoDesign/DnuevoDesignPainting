@@ -1,6 +1,229 @@
 /***** NAVIGATION BAR  *****/
 
-@media screen and (max-width: 490px) {
+@media (min-width: 768px) {
+   
+   /* TOP CONTAINER*/
+   .contactInfo {
+      box-sizing: border-box;
+
+      display: flex;
+      justify-content: space-between;
+
+      background-color: #091057;
+   }.contactInfo span {
+      display: flex;
+      align-items: center;
+      
+      margin: 0px 50px;
+
+      height: 100px;
+
+      a {
+         text-decoration: none;
+         color: #DBD3D3;
+         font-weight: 600;
+      }
+   }
+
+   .contactInfo span:nth-child(1) {
+      a {
+         font-size: 25px;
+      }
+   }.contactInfo span:nth-child(2) {
+      
+      a {
+         color: #091057;
+         background-color: #DBD3D3;
+
+         padding: 20px;
+
+         font-size: 20px;
+
+         border-radius: 5px;
+
+         box-shadow: 2px 2px 2px 1px #ffffffb6;
+
+      }
+      a:hover {
+         background-color: #091057;
+         color: #DBD3D3;
+         border: 3px solid #DBD3D3;
+         box-shadow: 0 0 10px 1px #ffffffb6;
+
+
+
+      }
+   }
+
+   /* MIDDLE CONTAINER */
+   .middleContainer {
+      background-color: #024CAA;
+
+      display: flex;
+      justify-content: center;
+
+      position: relative;
+
+      padding: 0 20px;
+
+
+   }
+   .hamburgerButton {
+      display: none;
+   }
+   
+   .navbar-list {
+      ul {
+         display: flex;
+         justify-content: space-evenly;
+
+         list-style: none;
+         
+         background-color: #DBD3D3;
+
+         margin: 0;
+         padding: 20px 0px;
+
+         li {
+            padding: 5px;
+
+            transition: padding 500ms ease-out;
+         }
+         li:hover {
+            border-radius: 2px;
+            padding: 15px;
+
+            transition: padding 500ms ease-in;
+
+         }
+         a {
+            color: #024CAA;
+            font-size: 2vw;
+            font-weight: 600;
+            text-decoration: none;
+
+         }
+      }
+   }
+
+   .currentPage {
+      border-bottom: 3.5px solid #024CAA;
+   }
+}
+
+@media (min-width: 490px) and (max-width: 768px) {
+
+   /* TOP CONTAINER*/
+   .contactInfo {
+      box-sizing: border-box;
+
+      display: flex;
+      justify-content: space-between;
+
+      background-color: #091057;
+   }.contactInfo span {
+      display: flex;
+      align-items: center;
+      
+      margin: 0px 50px;
+
+      height: 100px;
+
+      a {
+         text-decoration: none;
+         color: #DBD3D3;
+         font-weight: 600;
+      }
+   }
+
+   .contactInfo span:nth-child(1) {
+      a {
+         font-size: 25px;
+      }
+   }.contactInfo span:nth-child(2) {
+      
+      a {
+         color: #091057;
+         background-color: #DBD3D3;
+
+         padding: 20px;
+
+         font-size: 20px;
+
+         border-radius: 5px;
+
+         box-shadow: 2px 2px 2px 1px #ffffffb6;
+
+      }
+      a:hover {
+         background-color: #091057;
+         color: #DBD3D3;
+         border: 3px solid #DBD3D3;
+         box-shadow: 0 0 10px 1px #ffffffb6;
+
+
+
+      }
+   }
+
+   /* MIDDLE CONTAINER */
+   .middleContainer {
+      background-color: #024CAA;
+
+      display: flex;
+      justify-content: center;
+
+      position: relative;
+
+      padding: 0 20px;
+
+
+   }
+   .hamburgerButton {
+      display: none;
+   }
+   
+   .navbar-list {
+      ul {
+         display: flex;
+         justify-content: space-evenly;
+
+         list-style: none;
+         
+         background-color: #DBD3D3;
+
+         margin: 0;
+         padding: 20px 0px;
+
+         li {
+            padding: 5px;
+
+            transition: padding 500ms ease-out;
+         }
+         li:hover {
+            border-radius: 2px;
+            padding: 15px;
+
+            transition: padding 500ms ease-in;
+
+         }
+         a {
+            color: #024CAA;
+            font-size: 3.5vw;
+            font-weight: 600;
+            text-decoration: none;
+
+         }
+      }
+   }
+
+   .currentPage {
+      border-bottom: 3.5px solid #024CAA;
+   }
+
+}
+
+@media (max-width: 490px) {
    .contactInfo {
       box-sizing: border-box;
       display: flex;
@@ -30,8 +253,6 @@
    }
    .contactInfo span:nth-child(2) {
       margin-right: 20px;
-
-
       a {
          font-size: 18px;
          font-weight: 600;
@@ -61,13 +282,17 @@
    
    .navbar-list {
       background-color: #DBD3D3;
+      overflow: hidden;
+
+      height: 250px;
+      transition: height 500ms ease-in;
+
+      
 
       ul {
          list-style-type: none;
          padding: 5px 0px 5px 15px;
          margin: 0;
-
-         opacity: 1;
          li {
             margin: 25px 0px;
 
@@ -78,18 +303,17 @@
                
                font-size: 25px;
                font-weight: 600;
+         
+         
             }
          }
       }
    }
 
-   .navbar-list.collapse {
-      height: 0;
-      padding: 0;
-      opacity: 0;
-      display: none;
 
-      transition-duration: 5000ms;
+   .collapse {
+      transition: height 500ms ease-out;
+      height: 0;
    }
 
    /***** HAMBURGER BUTTON *****/
@@ -112,7 +336,7 @@
       margin: 6px;
 
 
-      transition: 0.2s;
+      transition: 200ms;
    }.change  .bar1 {
       transform: translate(0, 9px) rotate(-45deg);
    }
