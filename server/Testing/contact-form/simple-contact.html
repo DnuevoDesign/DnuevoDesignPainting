@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @media (max-width: 490px) {
+
+            * {
+                font-family: sans-serif;
+            }
+            form {
+                width: 95%;
+                margin: 0 auto;
+                
+                border: 3px solid black;
+            }
+
+            #contactText {
+
+                width: 80%;
+
+                margin: 20px auto 60px auto;
+                text-align: center;
+
+                span {
+                    display: inline-block;
+                    width: 20%;
+                    aspect-ratio: 1;
+
+                    margin: 0 auto;
+                    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            #name, #email, #message {
+                width: 90%;
+                margin: 15px auto;
+
+                text-align: center;
+
+                input, textarea {
+                    width: 100%;
+                    height: 35px;
+
+                    margin: 5px 0px;
+
+                    
+                }
+                input:focus, textarea:focus {
+                    border: 3px solid blue;
+                }
+            }
+
+            .mainContainer label {
+                display: block;
+                width: 100%;
+                text-align: left;
+
+                span {
+                    color: red;
+                }
+
+            }
+
+            #submitButton {
+                text-align: center;
+                margin: 20px 0px;
+
+                button {
+
+                    font-size: 15px;
+                    padding: 8px 40px; 
+
+                    box-shadow: 0 0 2px 2px lightgray;
+                }
+                button:hover {
+                    background-color: white;
+                    box-shadow: inset 0 0 2px 2px lightgray;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <form action="/simple-form" method="post">
+        <main class="mainContainer">
+
+            <div id="contactText">
+                <span><img src="../images/clipart4637009.png" alt=""></span>
+                <article>
+                    <h1>CONTACT US</h1>
+                    <p>We will reach out to you within the next 24 hours.</p>
+                </article>
+            </div>
+
+            <div id="name">
+                <label for="customerName"><span>*</span>Name</label>
+                <input type="text"  name="customerName">
+
+            </div>
+
+            <div id="email">
+                <label for="customerEmail"> <span>*</span>Email</label>
+                <input type="text"  name="customerEmail">
+
+            </div>
+
+            <div id="message">
+                <label for="customerMessage">Message</label>
+                <textarea 
+                    name="customerMessage" 
+                    id=""
+                    rows="2"
+                ></textarea>
+            </div>
+
+        </main>
+        <div id="submitButton"><button>SUBMIT</button></div>
+    </form>
+
+
+
+
+</body>
+</html>
