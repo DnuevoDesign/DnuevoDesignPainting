@@ -1,10 +1,16 @@
-const express = require("express");
-const path = require("path");
+import express from "express"
+import path from "path"
 
-const SendData  = require("./EmailManager/email-manager.js")
+import { MailSender } from "./EmailManager/email-manager.js";
+import { fileURLToPath } from 'url'; // Import this for working with paths in ES modules
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 const port = 80;
+
+
 
 app.use(express.static(path.join(__dirname, '/client/public')));
 app.use(express.urlencoded({ extended: true }));
@@ -23,11 +29,13 @@ app.post("/simple-form", (req, res) => {
         message: req.body.customerMessage
     }
 
-    console.log(`${customerData.name}  ${customerData.email}  ${customerData.message}`)
+    const test = new MailSender(customerData);
+    test.createEmailTemplate()
+    test.sendMail();
 
 
-    const emailSender = new SendData(customerData.name, customerData.email, customerData.message);
-    emailSender.main()
+
+
     res.send("THANK YOU FOR YOUR SUPPORT!")
 })
 
