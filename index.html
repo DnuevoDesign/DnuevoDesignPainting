@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dnuevo Design Painting</title>
+
+
+   <!--GOOGLE MAPS-->
+   <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoe8xEI1aPU7pTHl4aJeIHV_ODo9pGZfE&callback=console.debug&libraries=maps,marker&v=beta"></script>    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <link rel="stylesheet" href="/style/sections/service-area.css">
+    
+
+    <link rel="stylesheet" href="/style/services.css">
+    <link rel="stylesheet" href="/style/review.css">
+    <link rel="stylesheet" href="/style/review-container.css">
+    <link rel="stylesheet" href="/style/service-area.css">
+    <link rel="stylesheet" href="/style/footer.css">
+
+    <script type="module" src="/dist/webpage-component/webpage-component.esm.js"></script>
+    <script type="module" src="/dist/webpage-component/webpage-component.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        body{
+    margin: 0;
+}
+
+/***** NAVIGATION BAR  *****/
+
+.contactButton {
+    position: absolute;
+    right: 2%;
+    top: 23px;
+
+    a {
+        color: lightgrey;
+        text-decoration: none;
+        background-color: rgb(255, 255, 255);
+        padding: 15px;
+    }
+}
+.mainNavBar {
+    position: relative;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 10px #0005;
+    font-weight: 600;
+    font-size: 1.5rem;
+   background-color: white;
+    z-index: 1;
+
+ 
+ }
+ 
+ .navbar-list ul {
+    text-align: center;
+    padding: 0;
+ 
+    li {
+       display: inline;
+       list-style: none;
+       padding: 0px 15px;
+ 
+       a {
+          padding: 0.1rem;
+          color: inherit;
+          text-decoration: none;
+          text-shadow: 0 0 5px rgba(#000, 0.8);
+          letter-spacing: 2px;
+       }
+    }
+ }
+ .navbar-logo {
+    position: absolute;
+    top: 0.5rem;
+    left: 2rem;
+ }
+ 
+ .logoContainer {
+    position: absolute;
+ 
+    margin-top: 20px;  
+    margin-left: 5%; 
+ 
+ }
+ 
+ 
+ .hamburgerButton {
+    display: none;
+ }
+ 
+
+@media screen and (min-width: 768px) {
+   #home {
+      width: 100%;
+      height: 100vh;
+      background-image: url("https://i2.pickpik.com/photos/403/472/1002/wood-texture-pattern-tree-preview.jpg");
+      
+    }
+ 
+    .homeContainer { 
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      justify-content: ;
+      box-sizing: border-box;
+
+      padding-left: 10px;
+      padding-top: 25vh;
+
+
+      width: 50%;
+      height: 30%;
+    }
+
+    .textContainer {
+      margin-left: 50px;
+
+      font
+      h1 {
+         margin: 0;
+         font-size: 1.5rem;
+      }
+      h2 {
+         white-space: nowrap;
+         margin: 10px 0px;
+         font-size: 2.5rem;
+      }
+    }
+
+    .homeButtons {
+      display: flex;
+      margin-top: 30px;
+   
+      
+      span {
+         margin: 20px 10px;
+         padding: 10px;
+
+         background-color: white;
+         width: 150px;
+         aspect-ratio: 9/2;
+      
+         border-radius: 10px;
+         
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+         a {
+            
+            text-decoration: none;
+            color: black;
+            font-size: 1.2rem;
+            font-weight: 600;
+
+            white-space: nowrap;
+         }
+      }
+    }
+    .imageContainer {
+      
+      margin-left: 100px;
+      span {
+         display: inline-block;
+
+         width: 300px;
+         
+      }
+      img {
+         width: 100%;
+         border-radius: 50% 50% 50% 50% / 22% 20% 80% 78%  ;
+         border: 10px solid tan;
+      }
+      
+    }
+
+}
+
+
+
+@media screen and (max-width: 490px) {
+   .contactButton {
+      display: none;
+   }
+
+    .mainNavBar {
+       width: 100%;
+       margin-left: 0%; 
+ 
+    }
+    .navbar-list {
+       transition: 10s;
+ 
+    }
+    .collapse.navbar-list ul  {
+ 
+       text-align: start;
+       overflow: hidden;
+       height: 0px;
+       opacity: 0;
+       margin-top: 4px;
+       
+       transition: height .3s ease-out, opacity 1s ease-out;
+       li {
+          display: block;
+          list-style: none;
+ 
+       }
+    }
+    .navbar-list ul  {
+       flex-direction: column;
+       text-align: start;
+       height: 160px;
+       opacity: 1;
+       transition: height .3s ease-in, opacity 2s ease-in; 
+ 
+       li {
+          display: block;
+          list-style: none;
+          margin: 15px 0px;
+       }
+    }
+
+
+    #home {
+      width: 100%;
+      
+    }
+ 
+    .homeContainer {
+      box-sizing: border-box;
+
+      margin-top: 25vh;
+      padding-left: 5%;
+
+
+      width: 100%;
+      height: 30%;
+      background-color: gray;
+    }
+
+    .textContainer {
+      
+      h1 {
+         margin: 0;
+         font-size: 1.3rem;
+      }
+      h2 {
+         white-space: nowrap;
+         margin: 10px 0px;
+         font-size: 2rem;
+      }
+    }
+
+    .homeButtons {
+      display: flex;
+      margin-top: 30px;
+   
+      
+      span {
+         margin: 20px 30px;
+         padding: 10px;
+
+         background-color: white;
+         width: 200px;
+         aspect-ratio: 9/3;
+      
+         border-radius: 10px;
+         
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+         a {
+            
+            text-decoration: none;
+            color: black;
+            font-size: 1.2rem;
+            font-weight: 600;
+
+            white-space: nowrap;
+         }
+      }
+    }
+    .imageContainer {
+      display: none;
+    }
+
+
+
+
+
+
+
+
+    /***** HAMBURGER BUTTON *****/
+    .hamburgerButton {
+ 
+       margin-left: 75%;
+       margin-bottom: 15px;
+       position: relative;
+       top: 25px;
+       border: 1px solid black;
+       border-radius: 2px;
+       cursor: pointer;
+       display: inline-block;
+    }.bar1,
+    .bar2,
+    .bar3 {
+       width: 35px;
+       height: 3.5px;
+       border-radius: 2px;
+       background-color: black;
+       margin: 6px;
+       
+ 
+       transition: 0.2s;
+    }.change  .bar1 {
+       transform: translate(0, 9px) rotate(-45deg);
+    }
+    .change .bar2 {
+       opacity: 0;
+    }
+    .change .bar3 {
+       transform: translate(0, -9px) rotate(45deg);
+    }
+
+
+
+
+
+
+
+
+
+
+#about {
+   box-sizing: border-box;
+
+   width: 100%;
+   height: auto;
+
+   margin: 3% 0;
+
+   padding-left: 15%;
+
+
+
+   h2 {
+      font-size: 2.5rem;
+   }
+
+}
+
+
+/* MEDIUM RESPONSIVE */
+@media screen and (max-width: 768px) {
+   
+}
+
+/* SMALL RESPONSIVE */
+@media screen and (max-width: 490px) {
+   #about {
+      box-sizing: border-box;
+   
+      width: 99%;
+      height: auto;
+   
+      margin: 5% 0;
+   
+      padding-left: 0%;
+   
+   
+   
+      h2 {
+         font-size: 2rem;
+         margin-bottom: 10px;
+      }
+   
+   }
+}
+ }
+ 
+    </style>
+</head>
+
+<body>
+
+    <ni-nav-bar-boot></ni-nav-bar-boot>
+
+    <section id="home">
+        <main class="homeContainer">
+           <div class="textContainer">
+              <h1>Dnuevo Design</h1>
+              <h2>Expert Painting Solutions</h2>
+              <h2>for Every Space</h2>
+              <div class="homeButtons">
+                 <span><a href="">Get Started</a></span>
+                 <span><a href="">Something Else</a></span>
+              </div>
+           </div>
+
+           <div class="imageContainer">
+              <span><img src="https://static4.depositphotos.com/1000263/342/v/450/depositphotos_3422350-stock-illustration-ink-splatter-rainbow-black.jpg" alt=""/></span>
+           </div>
+        </main>
+    </section>
+
+
+    <section id="about">
+      <div class="testimonial-heading">
+         <span>About</span>
+         <h4>Us</h4>
+      </div>
+        <ni-about-us-card
+            image = "data:image/jpeg;base64,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"
+            card-title = "Area of Service"
+            card-description = "Serving All of San Diego, Dnuevo Design, Inc. offers premier remodeling and contracting services throughout the area, ensuring quality and excellence in every project."
+        ></ni-about-us-card>
+        <ni-about-us-card
+            image = "/public/images/shutterstock_1162446697.jpg"
+            card-title = "Experience"
+            card-description = "From routine maintenance and repairs to dream home renovations, we can help with any project — big or small.;"
+        ></ni-about-us-card>
+        <ni-about-us-card
+            image = "https://www.cabinetmagic.com/wp-content/uploads/2023/09/preview-full-Four-Reasons-to-Choose-the-Highest-300x169-1.jpg"
+            card-title = "Quality Materials"
+            card-description = "From routine maintenance and repairs to dream home renovations, we can help with any project — big or small.;"
+        ></ni-about-us-card>
+
+    </section>
+
+
+    <section>
+      <div class="testimonial-heading">
+         <span>Our</span>
+         <h4>Services</h4>
+      </div>
+        <main id="painting-services" class="page-content" >
+
+            <a class="d_card" href="/public/pages/painting-services/residential-interior.html" >
+              <div class="content">
+                <h2 class="heading">Residential Interior Painting</h2>
+                <p class="data-content">Revitalize Your Home's Interior</p>
+              </div>
+            </a>
+            
+            <a class="d_card" href="/public/pages/painting-services/commercial-painting.html" >
+              <div class="content">
+                <h2 class="heading">Commercial Painting</h2>
+                <p class="data-content">Transform Your Business Atmosphere</p>
+              </div>
+            </a>
+    
+            <a class="d_card" href="/public/pages/painting-services/re-finish-cabinets.html" >
+              <div class="content">
+                <h2 class="heading">Re-Finish Cabinets</h2>
+                <p class="data-content">Restore Your Cabinets' Beauty with Detailed Refinishing</p>
+              </div>
+            </a>
+  
+            <a class="d_card" href="/public/pages/painting-services/stain-finish.html" >
+              <div class="content">
+                <h2 class="heading">Stain Finish</h2>
+                <p class="data-content">Enhance Surfaces' Beauty with Detailed Stain Finishing.</p>
+              </div>
+            </a>
+    
+            <a class="d_card" href="/public/pages/painting-services/residential-exterior.html" >
+              <div class="content">
+                <h2 class="heading">Residential Exterior Painting</h2>
+                <p class="data-content">Elevate Your Home's Curb Appeal with Detailed Exterior Painting</p>
+              </div>
+            </a>
+    
+            <a class="d_card" href="/public/pages/painting-services/power-washing.html" >
+              <div class="content">
+                <h2 class="heading">Power Washing</h2>
+                <p class="data-content">Refresh Your Property's Appearance </p>
+              </div>
+            </a>
+            <a class="d_card" href="/public/pages/painting-services/epoxy-floor.html" >
+              <div class="content">
+                <h2 class="heading">Epoxy Floor</h2>
+                <p class="data-content">Transform Your Space with Premium Epoxy Flooring: Durable, Stylish, and Seamless Solutions</p>
+              </div>
+            </a>
+    
+          </main>
+    </section>
+
+    <section id="testimonials" style="height: auto;">
+      <!--heading--->
+      <div class="testimonial-heading">
+          <span>Reviews</span>
+          <h4>From our clients</h4>
+      </div>
+      <!--testimonials-box-container------>
+      <div class="testimonial-box-container">
+          <!--BOX-1-------------->
+          <div class="testimonial-box">
+              <!--top------------------------->
+              <div class="box-top">
+                  <!--profile----->
+                  <div class="profile">
+                      <!--img---->
+                      <div class="profile-img">
+                          <img src="" />
+                      </div>
+                      <!--name-and-username-->
+                      <div class="name-user">
+                          <strong>Karl Willert</strong>
+                          <span>2 months ago</span>
+                      </div>
+                  </div>
+                  <!--reviews------>
+                  <div class="reviews">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i><!--Empty star-->
+                  </div>
+              </div>
+              <!--Comments---------------------------------------->
+              <div class="client-comment">
+                  <p>
+                    Complete remodel of a bathroom. End product is perfect and beautiful. Oscar Perez is a great contractor and wonderful person.
+                  </p>
+              </div>
+          </div>
+                   <!--BOX-2-------------->
+                   <div class="testimonial-box">
+                    <!--top------------------------->
+                    <div class="box-top">
+                        <!--profile----->
+                        <div class="profile">
+                            <!--img---->
+                            <div class="profile-img">
+                                <img src="" />
+                            </div>
+                            <!--name-and-username-->
+                            <div class="name-user">
+                                <strong>Terry Gaasterland</strong>
+                                <span>2 months ago</span>
+                            </div>
+                        </div>
+                        <!--reviews------>
+                        <div class="reviews">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><!--Empty star-->
+                        </div>
+                    </div>
+                    <!--Comments---------------------------------------->
+                    <div class="client-comment">
+                        <p>
+                          Excellent work as always.
+                        </p>
+                    </div>
+                </div>
+                    <!--BOX-3-------------->
+                    <div class="testimonial-box">
+                      <!--top------------------------->
+                      <div class="box-top">
+                          <!--profile----->
+                          <div class="profile">
+                              <!--img---->
+                              <div class="profile-img">
+                                  <img src="" />
+                              </div>
+                              <!--name-and-username-->
+                              <div class="name-user">
+                                  <strong>Bill Ritman</strong>
+                                  <span>6 months ago</span>
+                              </div>
+                          </div>
+                          <!--reviews------>
+                          <div class="reviews">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i><!--Empty star-->
+                          </div>
+                      </div>
+                      <!--Comments---------------------------------------->
+                      <div class="client-comment">
+                          <p>
+                            Very well done also the area was left spotless. Happy to recommend.
+                          </p>
+                      </div>
+                  </div>
+          <!--BOX-4-------------->
+          <div class="testimonial-box">
+            <!--top------------------------->
+            <div class="box-top">
+                <!--profile----->
+                <div class="profile">
+                    <!--img---->
+                    <div class="profile-img">
+                        <img src="" />
+                    </div>
+                    <!--name-and-username-->
+                    <div class="name-user">
+                        <strong>Susan Leckband</strong>
+                        <span>6 months ago</span>
+                    </div>
+                </div>
+                <!--reviews------>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i><!--Empty star-->
+                </div>
+            </div>
+            <!--Comments---------------------------------------->
+            <div class="client-comment">
+                <p>
+                  Oscar is amazing! I have already referred he and his 
+                  crew to numerous people. He is kind and polite, works 
+                  long, hard hours, and really delivers. He has tackled 
+                  large jobs, like resurfacing the garage floor with epoxy 
+                  and remodeling the powder room, to small jobs, like patching 
+                  and painting the walls.
+                </p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="service-area">
+      <h2>Service Area in San Diego County</h2>
+      <div class="service-area-locations">
+        <ul>
+          <li>Oceanside</li>
+          <li>Carlsbad</li>
+          <li>Vista</li>
+          <li>San Marcos</li>
+          <li>Poway</li>
+          <li>Torrey Pines</li>
+          <li>Encinitas</li>
+          <li>Solana Beach</li>
+          <li>Rancho Santa Fe</li>
+          <li>La Jolla</li>
+          <li>Point Loma</li>
+          <li>Coronado</li>
+          <li><b>and many more...</b></li>
+        </ul>
+      </div>
+  
+      <div class="service-area-alternate">
+        <h3>Not Near San Diego? We can still help!</h3>
+        <a href="/public/pages/contact.html"><button>Contact Us</button></a>
+      </div>
+      <gmp-map center="33.19056717966587,-117.25291833892344" zoom="18" map-id="DEMO_MAP_ID">
+        <gmp-advanced-marker position="33.19056717966587,-117.25291833892344" title="My location"></gmp-advanced-marker>
+      </gmp-map>
+  
+    </section>
+
+
+    <br>
+    <footer class="footer" >
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>Hours</h4>
+            <ul>
+              <li><a href="#">Sunday <br>  Closed</a></li>
+              <li><a href="#">Saturday <br>  8:00am - 4:30pm</a></li>
+              <li><a href="#">Monday - Friday <br> 7:30am - 5:30pm</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <ul>
+              <li><a href="https://www.google.com/maps/place/410+S+Melrose+Dr+%23218,+Vista,+CA+92081/@33.1905834,-117.2577859,17z/data=!3m1!4b1!4m5!3m4!1s0x80dc741c56218231:0xf6893725e411cc48!8m2!3d33.190579!4d-117.252915?entry=ttu&g_ep=EgoyMDI0MDkwOC4wIKXMDSoASAFQAw%3D%3D">410 S Melrose Dr #218 <br>Vista, CA 92081</a></li>
+              <li><a href="mailto:dnuevodesign22@gmail.com">dnuevodesign22@gmail.com</a></li>
+              <li><a href="tel:8883835134">Office Phone <br> (888)383-5134</a></li>
+              <li><a href="tel:7603909158">Alternate Office Phone <br> (760)390-9158</a></li>
+              <li><a href="tel:7607055821">Estimating Service <br> (760)705-5821</a></li>
+            </ul>
+          </div>
+
+            <div class="footer-col">
+              <h4>Lic. & Cert.</h4>
+              <ul>
+                <li>
+                  <div style="width: 100px; height: auto; ">
+                    <a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=937238#MainContent_extractDate">
+                      <img src="/public/images/lic-and-cert/ccsl.png" alt="Contracting License" style="width: 100%; height: 100%; border: 2px solid; border-radius: 2px;">
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div style="width: 70px; height: 100px;">
+                    <a href="">
+                      <img src="/public/images/lic-and-cert/lead-safe-cert.png" alt="Safety Certificate" style="width: 100%; height: 100%; border: 2px solid; border-radius: 2px;">
+                    </a>
+                  </div>
+                </li>
+              </ul>
+          </div>
+
+          
+          
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/dnuevodesign"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/dnuevo.design"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/@DnuevoDesign"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyRightStatement">
+        <span><img src="/public/images/logo/logo-icon.png" alt="Company Logo"></span>
+        <h3>&copy; 2024 Dnuevo Design, inc. All Rights Reserved</h3>
+     </div>
+   </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
