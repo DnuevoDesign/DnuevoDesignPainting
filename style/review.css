@@ -14,8 +14,14 @@
     width:100%;
 }
 .testimonial-heading{
+    position: absolute;
+    left: 45%;
+    top: -50px;
+    
+    box-shadow: 0 0 10px 1px rgb(165, 165, 165);
+    background-color: #ECECEC;
     letter-spacing: 1px;
-    margin: 30px 0px;
+
     padding: 10px 20px;
     display: flex;
     flex-direction: column;

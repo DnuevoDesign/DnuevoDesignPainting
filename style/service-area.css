@@ -1,6 +1,7 @@
 
 @media (min-width: 1040px) {
     #service-area {
+
         margin-top: 5%;
         display: grid; 
         grid-template-columns: repeat(2, 1fr);

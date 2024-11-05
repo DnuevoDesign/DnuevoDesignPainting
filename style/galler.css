@@ -1,0 +1,66 @@
+@charset "utf8";
+@import url(https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap);
+
+:root {
+  --minFontSize: 10px;
+  --maxFontSize: 24px;
+  --scaler: 5vw;
+  font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.gallery {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+  aspect-ratio: 5/3;
+  background-color: black;
+  border: 4px solid transparent;
+  border-image: linear-gradient(to right, darkgoldenrod, palegoldenrod) 1 1%;
+
+  &:hover :not(div[data-pos='0'],img) { cursor: pointer; } /* Change the pointer except on the main picture */
+
+  & .item {
+    --ImgSizeX: 20%;
+    --ImgSizeY: 25%;
+    position: absolute;
+    width: var(--ImgSizeX);
+    height: var(--ImgSizeY);
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    & img:hover {
+      border: 2px solid transparent; /* a simple hover effect */
+    }
+  }
+
+  & div[data-pos='0'] { 
+    width: calc(var(--ImgSizeX) * 3); /* 3 columns */
+    height: calc(var(--ImgSizeY) * 3); /* 3 rows, I don't use "inherit" or "auto" due to the borders */
+    pointer-events: none; /* no hover effect on the main picture */
+    transition: width .25s, height .25s;
+  }
+}
+
+div[data-pos='0'] { transform: translate(0%,0%); }
+div[data-pos='1'] { transform: translate(300%,0%); }
+div[data-pos='2'] { transform: translate(400%,0%); }
+div[data-pos='3'] { transform: translate(300%,100%); }
+div[data-pos='4'] { transform: translate(400%,100%); }
+div[data-pos='5'] { transform: translate(300%,200%); }
+div[data-pos='6'] { transform: translate(400%,200%); }
+div[data-pos='7'] { transform: translate(0%,300%); }
+div[data-pos='8'] { transform: translate(100%,300%); }
+div[data-pos='9'] { transform: translate(200%,300%); }
+div[data-pos='10'] { transform: translate(300%,300%); }
+div[data-pos='11'] { transform: translate(400%,300%); }

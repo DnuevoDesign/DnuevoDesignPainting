@@ -1,0 +1,226 @@
+@font-face { font-family: Ogg;
+   src: url(https://files.jcink.net/uploads2/resin/Ogg_Roman.otf); }
+ 
+ 
+ @font-face { font-family: Ogg ital;
+   src: url(https://files.jcink.net/uploads2/resin/Ogg_Italic.otf); }
+ 
+ 
+ @font-face { font-family: Ogg thin;
+   src: url(https://files.jcink.net/uploads2/resin/CopyrightSharpTypeCoThisfontislicensedforwebuseonly.ttf); }
+ 
+ @font-face
+ {
+ font-family: Romana;
+ src: url(https://files.jcink.net/uploads2/resin/romanan.ttf);
+ }
+ 
+ @font-face { font-family: Consolas;
+   src: url(https://files.jcink.net/uploads2/resin/CONSOLA_TTF.ttf); }
+ 
+ @font-face { font-family: Bodoni;
+   src: url(https://files.jcink.net/uploads2/resin/BodoniModa_VariableFont_opsz_wght.ttf); }
+ 
+ 
+ 
+ 
+ 
+ .header { 
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    height: 45vmin;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+ 
+ 
+ 
+ .headersm { color: rgba(217, 205, 189, 1.0);
+    font-family: Ogg; 
+    font-size: 30px; 
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 15px; 
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-size: 2vmin;
+    justify-content: center;
+
+  }
+ 
+ .headerital { 
+  padding-left: 20px; font-family: Ogg Ital; font-size: 30px; text-transform: lowercase; letter-spacing: 4px; 
+    font-size: 3vmin;
+   
+ }
+ 
+ .headerlg { color: #ded9d2;
+    margin: auto;
+    opacity: 1.0;
+    font-family: Ogg;
+    font-weight: 100;
+    font-size: 200px; 
+    text-align: center;
+    letter-spacing: -10px;
+    text-transform: none;
+    vertical-align: middle; display: inline-block; font-size: 20vmin;   
+    border-bottom: 2px solid #bba283;
+    height: 150%;
+ }
+ 
+ .headerO { 
+    color: #ded9d2;
+    opacity: 0.94;
+    font-family: Ogg;
+    font-size: 30vmin;
+    text-align: center;
+    letter-spacing: -10px;
+    text-transform: none;
+    vertical-align: middle;
+    display: inline;
+    line-height: 0;
+    margin-top: 2%;
+    flex: 0;
+
+  }
+  
+  .headersm p {
+    margin-top: 5%;
+    font-size: larger;
+    font-weight: 900;
+  }
+ 
+
+@media screen and (max-width:1450px) {
+  .headerO { 
+    font-size: 25vmin;
+    letter-spacing: -5px;
+
+   }
+
+   .headerlg { 
+    font-size: 200px; 
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: none;
+    vertical-align: middle;
+    display: inline-block; 
+    font-size: 13vmin;   
+    border-bottom: 2px solid #bba283;
+    height: 150%;
+  }
+
+  .headerital { 
+      padding-left: 20px; 
+      font-family: Ogg Ital; 
+      font-size: 30px; 
+      text-transform: lowercase; 
+      letter-spacing: 1px; 
+      font-size: 3vmin;
+     
+   }
+
+   .headersm { 
+      color: rgba(217, 205, 189, 1.0);
+      font-family: Ogg; 
+      font-size: 10px; 
+      text-transform: uppercase;
+      text-align: center;
+      align-items: center;
+      letter-spacing: 10px; 
+      vertical-align: middle;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      font-size: 2vmin;
+      justify-content: center;;
+     }
+}
+
+@media screen and (max-width:1150px) {
+  .headerO { 
+    font-size: 15vmin;
+   }
+
+   .headerlg { 
+
+    font-weight: 100;
+    font-size: 12vmin;   
+  }
+
+  .headerital { 
+      padding-left: 20px; 
+      letter-spacing: 2px; 
+      font-size: 3vmin;  
+   }
+
+   .headersm { 
+      letter-spacing: 5px; 
+      font-size: 1.5vmin;
+     }
+}
+
+@media screen and (max-width:980px) {
+
+  .header { 
+    top: 60%;
+    left: 1%;
+    width: 100%;
+  }
+
+
+  .headerO { 
+    font-size: 25vmin;
+   }
+
+   .headerlg { 
+
+    font-size: 12vmin;   
+  }
+
+  .headerital { 
+      padding-left: 20px; 
+      letter-spacing: 2px; 
+      font-size: 3vmin;  
+      margin-right: 15px;
+   }
+
+   .headersm { 
+      letter-spacing: 5px; 
+      font-size: 3vmin;
+      font-weight: 500;
+     }
+
+    .headersm p {
+      font-size: 2.4vmin;
+      font-weight: 300;
+    }
+
+
+}
+
+
+@media screen and (max-width:550px) {
+  .headersm p {
+    margin-top: 7%;
+    font-size: 2.5vmin;
+    font-weight: 700;
+  }
+
+  .headerital { 
+    padding-left: 10px; 
+    letter-spacing: 2px; 
+    font-size: 3vmin;  
+    margin-right: 10px;
+ }
+}
+
+
+
+
