@@ -1,0 +1,286 @@
+
+body{
+    margin: 0;
+}
+
+@media (min-width: 1040px) {
+    #home {
+        width: 100%;
+        height: 100vh;
+        background-image: url("https://i2.pickpik.com/photos/403/472/1002/wood-texture-pattern-tree-preview.jpg");
+        
+      
+        display: flex;
+        justify-content: space-between;
+      
+        padding-top: 25vh;
+        padding-left: 100px;
+        padding-right: 200px;
+      }
+  
+  
+      .textContainer {
+  
+        h1 {
+           margin: 0;
+           font-size: 2.5rem;
+        }
+        h2 {
+           white-space: nowrap;
+           margin: 10px 0px;
+           font-size: 4.5rem;
+        }
+      }
+  
+      .homeButtons {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+     
+        
+        span {
+           margin: 20px 60px;
+           padding: 20px 90px;
+  
+           background-color: white;
+           width: 150px;
+           aspect-ratio: 9/2;
+        
+           border-radius: 10px;
+           
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           
+           a {
+              
+              text-decoration: none;
+              color: black;
+              font-size: 1.5rem;
+              font-weight: 600;
+  
+              white-space: nowrap;
+           }
+        }
+      }
+      .imageContainer {
+
+        margin:0px 25px;
+        span {
+           display: inline-block;
+  
+           min-width: 350px;
+           max-width: 400px; 
+        }
+        img {
+           width: 100%;
+           border-radius: 50% 50% 50% 50% / 22% 20% 80% 78%  ;
+           border: 10px solid tan;
+        }
+        
+      }
+}
+
+@media (min-width: 768px) and (max-width: 1040px) {
+   #home {
+      width: 100%;
+      height: 100vh;
+      background-image: url("https://i2.pickpik.com/photos/403/472/1002/wood-texture-pattern-tree-preview.jpg");
+      
+    
+      display: flex;
+      justify-content: center;
+    
+      padding-top: 25vh;
+    }
+
+
+    .textContainer {
+
+      h1 {
+         margin: 0;
+         font-size: 1.9rem;
+      }
+      h2 {
+         white-space: nowrap;
+         margin: 10px 0px;
+         font-size: 2.9rem;
+      }
+    }
+
+    .homeButtons {
+      display: flex;
+      margin-top: 30px;
+   
+      
+      span {
+         margin: 20px 10px;
+         padding: 10px;
+
+         background-color: white;
+         width: 150px;
+         aspect-ratio: 9/2;
+      
+         border-radius: 10px;
+         
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+         a {
+            
+            text-decoration: none;
+            color: black;
+            font-size: 1.2rem;
+            font-weight: 600;
+
+            white-space: nowrap;
+         }
+      }
+    }
+    .imageContainer {
+      
+      margin: 0px 25px;
+      span {
+         display: inline-block;
+
+         min-width: 250px;
+         max-width: 300px; 
+      }
+      img {
+         width: 100%;
+         border-radius: 50% 50% 50% 50% / 22% 20% 80% 78%  ;
+         border: 10px solid tan;
+      }
+      
+    }
+
+}
+
+@media (min-width: 490px) and (max-width: 768px) {
+    #home {
+        width: 100%;
+        box-sizing: border-box;
+  
+        padding-top: 15vh;
+        padding-bottom: 100px;
+  
+        padding-left: 5%;
+  
+        width: 100%;
+        
+        background-color: gray;
+      }
+  
+      .textContainer {
+        
+        h1 {
+           margin: 0;
+           font-size: 1.5rem;
+        }
+        h2 {
+           white-space: nowrap;
+           margin: 10px 0px;
+           font-size: 2.5rem;
+        }
+      }
+  
+      .homeButtons {
+        display: flex;
+        margin-top: 30px;
+        justify-content: center;
+     
+        
+        span {
+           margin: 20px 30px;
+           padding: 10px;
+  
+           background-color: white;
+           width: 200px;
+           aspect-ratio: 9/3;
+        
+           border-radius: 10px;
+           
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           
+           a {
+              
+              text-decoration: none;
+              color: black;
+              font-size: 1.2rem;
+              font-weight: 600;
+  
+              white-space: nowrap;
+           }
+        }
+      }
+      .imageContainer {
+        display: none;
+      }
+}
+
+@media (max-width: 490px) {
+
+    #home {
+      width: 100%;
+      box-sizing: border-box;
+
+      padding-top: 15vh;
+      padding-bottom: 100px;
+
+
+
+      width: 100%;
+      
+      background-color: gray;
+    }
+
+    .textContainer {
+      
+      h1 {
+         margin: 0;
+         font-size: 1.3rem;
+      }
+      h2 {
+         white-space: nowrap;
+         margin: 10px 0px;
+         font-size: 2rem;
+      }
+    }
+
+    .homeButtons {
+      display: flex;
+      margin-top: 30px;
+   
+      
+      span {
+         margin: 20px 30px;
+         padding: 10px;
+
+         background-color: white;
+         width: 200px;
+         aspect-ratio: 9/3;
+      
+         border-radius: 10px;
+         
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+         a {
+            
+            text-decoration: none;
+            color: black;
+            font-size: 1.2rem;
+            font-weight: 600;
+
+            white-space: nowrap;
+         }
+      }
+    }
+    .imageContainer {
+      display: none;
+    }
+}

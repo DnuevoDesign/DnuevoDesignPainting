@@ -21,6 +21,10 @@ export namespace Components {
         "imageSource": string;
         "link": string;
     }
+    interface NiCarouselCard {
+        "numberStars": number;
+        "siteLogo": string;
+    }
     interface NiNavBarBoot {
     }
     interface NiReviewBox {
@@ -53,6 +57,12 @@ declare global {
         prototype: HTMLNiBlogCardElement;
         new (): HTMLNiBlogCardElement;
     };
+    interface HTMLNiCarouselCardElement extends Components.NiCarouselCard, HTMLStencilElement {
+    }
+    var HTMLNiCarouselCardElement: {
+        prototype: HTMLNiCarouselCardElement;
+        new (): HTMLNiCarouselCardElement;
+    };
     interface HTMLNiNavBarBootElement extends Components.NiNavBarBoot, HTMLStencilElement {
     }
     var HTMLNiNavBarBootElement: {
@@ -75,6 +85,7 @@ declare global {
         "nate-nav-bar": HTMLNateNavBarElement;
         "ni-about-us-card": HTMLNiAboutUsCardElement;
         "ni-blog-card": HTMLNiBlogCardElement;
+        "ni-carousel-card": HTMLNiCarouselCardElement;
         "ni-nav-bar-boot": HTMLNiNavBarBootElement;
         "ni-review-box": HTMLNiReviewBoxElement;
         "ni-review-container": HTMLNiReviewContainerElement;
@@ -96,6 +107,10 @@ declare namespace LocalJSX {
         "imageSource"?: string;
         "link"?: string;
     }
+    interface NiCarouselCard {
+        "numberStars"?: number;
+        "siteLogo"?: string;
+    }
     interface NiNavBarBoot {
     }
     interface NiReviewBox {
@@ -112,6 +127,7 @@ declare namespace LocalJSX {
         "nate-nav-bar": NateNavBar;
         "ni-about-us-card": NiAboutUsCard;
         "ni-blog-card": NiBlogCard;
+        "ni-carousel-card": NiCarouselCard;
         "ni-nav-bar-boot": NiNavBarBoot;
         "ni-review-box": NiReviewBox;
         "ni-review-container": NiReviewContainer;
@@ -124,6 +140,7 @@ declare module "@stencil/core" {
             "nate-nav-bar": LocalJSX.NateNavBar & JSXBase.HTMLAttributes<HTMLNateNavBarElement>;
             "ni-about-us-card": LocalJSX.NiAboutUsCard & JSXBase.HTMLAttributes<HTMLNiAboutUsCardElement>;
             "ni-blog-card": LocalJSX.NiBlogCard & JSXBase.HTMLAttributes<HTMLNiBlogCardElement>;
+            "ni-carousel-card": LocalJSX.NiCarouselCard & JSXBase.HTMLAttributes<HTMLNiCarouselCardElement>;
             "ni-nav-bar-boot": LocalJSX.NiNavBarBoot & JSXBase.HTMLAttributes<HTMLNiNavBarBootElement>;
             "ni-review-box": LocalJSX.NiReviewBox & JSXBase.HTMLAttributes<HTMLNiReviewBoxElement>;
             "ni-review-container": LocalJSX.NiReviewContainer & JSXBase.HTMLAttributes<HTMLNiReviewContainerElement>;

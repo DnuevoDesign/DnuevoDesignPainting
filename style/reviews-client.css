@@ -1,0 +1,129 @@
+
+
+#reviews {
+
+    width: 75%;
+    height: auto;
+    margin: 0px auto;
+
+    position: relative;
+
+}
+#leftArrow {
+    position: absolute;
+    bottom: 45%;
+
+    button {
+
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 0;
+
+        cursor: pointer;
+
+        background-color: white;
+        box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.679),
+                    0px 0px 5px 4px rgba(0, 0, 0, 0.1);
+    }
+}
+#rightArrow {
+    position: absolute;
+    bottom: 45%;
+    right: 0;
+
+    button {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 0;
+
+        cursor: pointer;
+
+        background-color: white;
+        box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.679),
+                    0px 0px 5px 4px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.reviewContainer {
+
+    display: flex;
+
+    width: 90%;
+    height: auto;
+    margin: 0px auto;
+
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+
+}
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+    
+#reviews {
+    width: 90%;
+    height: auto;
+
+    margin: 5% auto;
+
+}
+
+.reviewContainer {
+
+    display: flex;
+
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+
+    overflow-x: scroll;
+}
+
+#rightArrow, 
+#leftArrow {
+    display: none;
+}
+}
+
+
+@media screen and (max-width: 1040px) {
+    #leftArrow {
+        position: relative;
+        button {
+            position: absolute;
+            top: 150px;
+            right: -30px;
+    
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 0;
+    
+            background-color: white;
+            box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.679),
+                        0px 0px 5px 4px rgba(0, 0, 0, 0.1);
+        }
+    }
+    #rightArrow {
+        position: relative;
+        button {
+            position: absolute;
+            left: 81.8vw;
+            top: 150px;
+    
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 0;
+    
+            background-color: white;
+            box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.679),
+                        0px 0px 5px 4px rgba(0, 0, 0, 0.1);
+        }
+    }
+}

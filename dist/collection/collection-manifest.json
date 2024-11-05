@@ -5,6 +5,7 @@
     "components/nav-bar/nav-bar.js",
     "components/nav-bar-bootstrap/nav-bar.js",
     "components/review/review-container/review-container.js",
+    "components/review/review-container/carousel-review/carousel-card.js",
     "components/reviews/reviews-box.js"
   ],
   "compiler": {
