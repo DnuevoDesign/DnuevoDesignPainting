@@ -2,7 +2,7 @@
 import { Component, Prop } from "@stencil/core";
 import { h } from "@stencil/core";
 
-import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 
 //TODO: declares a new web component
@@ -10,7 +10,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
     tag: 'nate-nav-bar', // Creates tag "same naming convention as js components"
     styleUrl: './nav-bar.css', //Imports CSS styles
     //scoped: true, // Similar to the shadow DOM but doesn't rely on the actual shadow DOM
-    shadow: true // Uses the Shadow DOM and automatically changes for older browsers
+    shadow: false // Uses the Shadow DOM and automatically changes for older browsers
 
 })
 
@@ -36,23 +36,15 @@ export class NavBar {
 
         nestedListItem = (
             <div class={`nestListItem ${this.isNestListItemOpen ? "" : "hideListItem"}` } >
-                <h3>General Contracting</h3>
-                <ul>
-                    <li><a href="">Kitchen Remodeling</a></li>
-                    <li><a href="">Bathroom Remodeling</a></li>
-                    <li><a href="">Decorative Panel Wall</a></li>
-                    <li><a href="">Outdoor Living</a></li>
-                    <li><a href="">Additional</a></li>
-                    <li><a href="">Maintenance</a></li>
-                </ul>
                 <h3>Painting</h3>
                 <ul>
-                    <li><a href="">Kitchen Remodeling</a></li>
-                    <li><a href="">Bathroom Remodeling</a></li>
-                    <li><a href="">Decorative Panel Wall</a></li>
-                    <li><a href="">Outdoor Living</a></li>
-                    <li><a href="">Additional</a></li>
-                    <li><a href="">Maintenance</a></li>
+                    <li><a href="">Residential Interior Painting</a></li>
+                    <li><a href="">Commercial Painting</a></li>
+                    <li><a href="">Residential Exterior Painting</a></li>
+                    <li><a href="">Re-Finished Cabinets</a></li>
+                    <li><a href="">Stain Finish</a></li>
+                    <li><a href="">Power Washing</a></li>
+                    <li><a href="">Epoxy Flooring</a></li>
                 </ul>
             </div>
         )
@@ -68,7 +60,6 @@ export class NavBar {
                         <a onClick={() => this.toggleListItem()}>Services</a>
                         {nestedListItem}
                     </li>
-                    <li><a href="">About us</a></li>
                     <li><a href="">Our Work</a></li>
                     <li><a href="">Testimonials</a></li>
                 </ul>
@@ -82,8 +73,7 @@ export class NavBar {
                     <figure><img src="https://speedy.uenicdn.com/e593fd58-da1a-490f-8995-4d98a46c7b1c/n200_54a/image/upload/v1690501073/business/e5fbedd2-a5d9-4605-96bc-c0ff06dcdfaa.png" alt="Company Logo" /></figure>
                     <ul class="mainMenu">
                         <li><a href="">Home</a></li>
-                        <li><a>Services</a></li>
-                        <li><a href="">About us</a></li>
+                        <li><a>Services</a><i class="fa-thin fa-chevron-down"></i></li>
                         <li><a href="">Our Work</a></li>
                         <li><a href="">Testimonials</a></li>
                     </ul>

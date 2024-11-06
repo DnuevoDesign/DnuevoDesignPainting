@@ -10,8 +10,69 @@ nav {
     box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.448);
 }
 
+    /* ONLY FOR SMALL SCREEN */
+    .dropDownMenu .contactButton { 
+        display: none;
+    }.hamburgerButton {
+        display: none;
+    }
+    /************************/
+
+    nav {
+        height: 100px;
+
+    }
+
+    main {
+        position: relative;
+
+    }
+
+    .contactButton {
+        position: absolute;
+        right: 0;
+        margin-right: 30px;
+    }
+    main figure {
+        position: absolute;
+        left: 0;
+        top: 15px;
+
+        margin-left: 10px;
+    }
+
+    .mainMenu {
+        position: relative;
+        top: 30px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        list-style-type: none;
 
 
+        a {
+            text-decoration: none;
+            padding: 10px;
+
+            font-size: 20px;
+            color: black;
+        }
+    }
+
+    
+
+
+    .dropDownMenu {
+        display: none;
+    }
+
+    .nestListItem {
+        display: none;
+    }
+
+    
 
 
 @media (min-width: 490px) and (max-width: 768px) {
@@ -36,11 +97,9 @@ nav {
     .contactButton {
         position: absolute;
         right: 0;
+        margin-right: 5px;
     }
-    main figure {
-        position: absolute;
-        left: 0;
-    }
+
 
     .mainMenu {
         position: relative;
@@ -52,9 +111,6 @@ nav {
 
         list-style-type: none;
 
-        li {
-            
-        }
         a {
             text-decoration: none;
             padding: 10px;
@@ -67,14 +123,12 @@ nav {
     
 
 
-
-
-
+    .dropDownMenu {
+        display: none;
+    }
 
     .nestListItem {
         display: none;
-    }.dropDownMenu {
-        
     }
 }
 
@@ -138,7 +192,7 @@ nav {
     }
 
     .nestListItem {
-        height: 300px;
+        height: 430px;
         overflow: hidden;
 
         transition: height 300ms ease-in-out;
