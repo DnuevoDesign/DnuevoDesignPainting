@@ -22,6 +22,11 @@
     <link rel="stylesheet" href="/style/galler.css">
     <link rel="stylesheet" href="/style/header-text.css">
 
+
+    <link rel="stylesheet" href="/style/record-style.css">
+    <script src="https://cdn.jsdelivr.net/npm/rrweb@latest/dist/rrweb-all.min.js"></script>
+
+
     <script type="module" src="/dist/webpage-component/webpage-component.esm.js"></script>
     <script type="module" src="/dist/webpage-component/webpage-component.js"></script>
 
@@ -56,7 +61,16 @@
           
     </section>
 
-
+    <div id="cookieRequest">
+      <h2>This website uses cookies and session record</h2>
+      <p>We use cookies and session records to personalize UI/UX and ads, and analyze our traffic. We do not share this information with third parties. </p>
+      
+      <div id="buttonContainer">
+          <button onclick="connectServer()">
+              Allow
+          </button>
+      </div>
+    </div>
 
 
 
@@ -235,6 +249,9 @@
               </ul>
           </div>
 
+
+
+
           
           
           <div class="footer-col">
@@ -255,6 +272,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
    <script src="/script/gallery.js"></script>
+   <script src="/script/RR/record.js"></script>
+   <script src="/script//RR/app.js"></script>
+
     <script type="module"   src="/script/review-client.js"></script>
 
 </body>

@@ -1,0 +1,36 @@
+#cookieRequest {
+
+    position: fixed;
+    bottom: 0;
+    left: 25%;
+    z-index: 10;
+
+    max-width: 80%;
+    min-width: 300px;
+
+    padding: 20px 5px;
+    background: linear-gradient(#bba283, #cbbaa5a0);
+    
+    text-align: center;
+
+    .buttonContainer {
+        display: flex;
+    }
+    button {
+        padding: 5px 20px;
+        margin: 5px auto;
+        font-size: .6rem;
+
+        background: linear-gradient(#ded9d2, #aea69a);
+    }
+    h2 {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    p {
+        margin: 0 auto;
+        width: 80%;
+        font-size: .7rem;
+        font-weight: 300;
+    }
+}
