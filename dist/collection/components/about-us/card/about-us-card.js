@@ -6,7 +6,7 @@ export class Card {
         this.cardDescription = undefined;
     }
     render() {
-        return (h("main", { key: 'a99e0999308f87d631f637ae0e5138dc673d960c', class: "aboutCard" }, h("article", { key: '8e2aad805a77c3b68b0cc15714b7a9bd845d58c1' }, h("img", { key: 'ca68b8ae2191f851993601b8b861061dcdc4b89a', src: this.image, alt: "About Us Image" }), h("h3", { key: 'f2dd4fbc0e4787ac0b173449bcf5314e74f2faa6' }, this.cardTitle), h("p", { key: '0f2c8489fba236c4420d54fba334c4a0929a3e5d' }, this.cardDescription))));
+        return (h("main", { key: 'ee1e344731f508a7a389aab7d9f8b5d87f73e1b8', class: "aboutCard" }, h("article", { key: 'aed88402ab5c7748f533a2197e99eb7d680019cc' }, h("img", { key: '34b6678a0143239ee8aa24f0ce6b6b8bd1987805', src: this.image, alt: "About Us Image" }), h("h3", { key: 'c1718698001b7ca9aae88222b56931789a2974bc' }, this.cardTitle), h("p", { key: 'e093555a9cedba80a63c53586c339d08cd2252e1' }, this.cardDescription))));
     }
     static get is() { return "ni-about-us-card"; }
     static get encapsulation() { return "shadow"; }

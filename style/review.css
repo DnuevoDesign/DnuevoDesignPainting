@@ -22,7 +22,9 @@
     background-color: #ECECEC;
     letter-spacing: 1px;
 
-    padding: 10px 20px;
+    padding: .5vw 20px;
+
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,7 +39,7 @@
     text-transform: uppercase;
 }
 .testimonial-heading h4 {
-    font-size: 2rem;
+    font-size: clamp(1rem, 1vw +1rem, 4rem);
 }
 .testimonial-box-container{
     display: flex;
@@ -115,6 +117,24 @@
     }
     .testimonial-heading h1{
         font-size: 1.4rem;
+    }
+    .testimonial-heading{
+        position: absolute;
+        left: 30vw;
+        top: -50px;
+        
+        box-shadow: 0 0 10px 1px rgb(165, 165, 165);
+        background-color: #ECECEC;
+        letter-spacing: 1px;
+    
+        padding: .5vw 20px;
+        margin-top: 10px;
+    
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 @media(max-width:340px){

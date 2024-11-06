@@ -38,13 +38,13 @@ export class NavBar {
             <div class={`nestListItem ${this.isNestListItemOpen ? "" : "hideListItem"}` } >
                 <h3>Painting</h3>
                 <ul>
-                    <li><a href="">Residential Interior Painting</a></li>
-                    <li><a href="">Commercial Painting</a></li>
-                    <li><a href="">Residential Exterior Painting</a></li>
-                    <li><a href="">Re-Finished Cabinets</a></li>
-                    <li><a href="">Stain Finish</a></li>
-                    <li><a href="">Power Washing</a></li>
-                    <li><a href="">Epoxy Flooring</a></li>
+                    <li><a href="/public/pages/painting-services/residential-interior.html">Residential Interior Painting</a></li>
+                    <li><a href="/public/pages/painting-services/commercial-painting.html">Commercial Painting</a></li>
+                    <li><a href="/public/pages/painting-services/residential-exterior.html">Residential Exterior Painting</a></li>
+                    <li><a href="/public/pages/painting-services/re-finish-cabinets.html">Re-Finished Cabinets</a></li>
+                    <li><a href="/public/pages/painting-services/stain-finish.html">Stain Finish</a></li>
+                    <li><a href="/public/pages/painting-services/power-washing.html">Power Washing</a></li>
+                    <li><a href="/public/pages/painting-services/epoxy-floor.html">Epoxy Flooring</a></li>
                 </ul>
             </div>
         )
@@ -70,17 +70,17 @@ export class NavBar {
         return (
             <nav>
                 <div id="callToAction">
-                    <h2><span>Holiday Sale</span> 10% OFF for all painting service</h2>
+                    <h2><span>Holiday Sale</span> 10% OFF any purchase over 5 thousand</h2>
                 </div>
                 <main>
                     <figure><img src="https://speedy.uenicdn.com/e593fd58-da1a-490f-8995-4d98a46c7b1c/n200_54a/image/upload/v1690501073/business/e5fbedd2-a5d9-4605-96bc-c0ff06dcdfaa.png" alt="Company Logo" /></figure>
                     <ul class="mainMenu">
                         <li><a href="">Home</a></li>
-                        <li><a>Services</a><i class="fa-thin fa-chevron-down"></i></li>
+                        <li><a href="#about">Services</a></li>
                         <li><a href="">Our Work</a></li>
                         <li><a href="">Testimonials</a></li>
                     </ul>
-                    <span class="contactButton"><button>CONTACT US</button></span>
+                    <a class="contactButton"><button type="button" class="btn btn-outline-secondary btn-lg">Contact Us</button></a>
                     <button class={`hamburgerButton ${this.isMainMenuOpen ? "change" : ""}`}  onClick={() => this.toggleMenu()}>
                         <div class="bar1"></div>
                         <div class="bar2"></div>
