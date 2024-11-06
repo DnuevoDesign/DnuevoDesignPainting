@@ -10,68 +10,35 @@ nav {
     box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.448);
 }
 
-    /* ONLY FOR SMALL SCREEN */
-    .dropDownMenu .contactButton { 
-        display: none;
-    }.hamburgerButton {
-        display: none;
-    }
-    /************************/
 
-    nav {
-        height: 100px;
+figure {
+    position: absolute;
+    top: 15px;
+    left: 20px;
 
-    }
+}
 
-    main {
-        position: relative;
+#callToAction {
+    background-color: rgb(122, 122, 122);
+    height: 50px;
+    padding-top: 10px;
+    position: relative;
+    z-index: 2;
 
-    }
-
-    .contactButton {
-        position: absolute;
-        right: 0;
-        margin-right: 30px;
-    }
-    main figure {
-        position: absolute;
-        left: 0;
-        top: 15px;
-
-        margin-left: 10px;
+    span {
+        color: yellow;
+        font-weight: 700;
     }
 
-    .mainMenu {
-        position: relative;
-        top: 30px;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-content: center;
+    h2 {
+        width: 100%;
+        font-size: 1rem;
+        text-align: center;
+        color: white;
+        font-weight: 300;
 
-        list-style-type: none;
-
-
-        a {
-            text-decoration: none;
-            padding: 10px;
-
-            font-size: 20px;
-            color: black;
-        }
     }
-
-    
-
-
-    .dropDownMenu {
-        display: none;
-    }
-
-    .nestListItem {
-        display: none;
-    }
-
+}
     
 
 
@@ -85,12 +52,13 @@ nav {
     /************************/
 
     nav {
-        height: 100px;
+        height: 150px;
 
     }
 
     main {
         position: relative;
+
 
     }
 

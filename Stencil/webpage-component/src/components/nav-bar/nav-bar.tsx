@@ -69,6 +69,9 @@ export class NavBar {
 
         return (
             <nav>
+                <div id="callToAction">
+                    <h2><span>Holiday Sale</span> 10% OFF for all painting service</h2>
+                </div>
                 <main>
                     <figure><img src="https://speedy.uenicdn.com/e593fd58-da1a-490f-8995-4d98a46c7b1c/n200_54a/image/upload/v1690501073/business/e5fbedd2-a5d9-4605-96bc-c0ff06dcdfaa.png" alt="Company Logo" /></figure>
                     <ul class="mainMenu">
