@@ -1,0 +1,6 @@
+# Allow all bots to crawl the entire site
+User-agent: *
+Disallow:
+
+# Encourage crawlers to revisit the site every other day by setting a crawl delay (48 hours = 172800 seconds)
+Crawl-delay: 172800  
