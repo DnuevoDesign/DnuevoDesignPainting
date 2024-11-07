@@ -11,6 +11,7 @@ export class Card {
     @Prop() image: string;
     @Prop() cardTitle: string;
     @Prop() cardDescription: string;
+    @Prop() link: string
 
 
 
@@ -18,11 +19,13 @@ export class Card {
     render() {
         return (
             <main class="aboutCard">
-                <article>
-                    <img src={this.image} alt="About Us Image" />
-                    <h3>{this.cardTitle}</h3>
-                    <p>{this.cardDescription}</p>
-                </article>
+                <a href={this.link}>
+                    <article>
+                        <img src={this.image} alt="About Us Image" />
+                        <h3>{this.cardTitle}</h3>
+                        <p>{this.cardDescription}</p>
+                    </article>
+                </a>
             </main>
         )
     }

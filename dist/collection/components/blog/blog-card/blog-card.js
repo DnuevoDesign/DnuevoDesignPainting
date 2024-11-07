@@ -7,7 +7,7 @@ export class BlogCard {
         this.date = undefined;
     }
     render() {
-        return (h("main", { key: 'd18f0c4e3e2b2ad9bcb2b903051c195107b239a8', class: 'card' }, h("a", { key: 'f9c270e18a2df3fb91d130547f868700258a9f64', href: this.link }, h("figure", { key: '2ecbb30e8e0571fe72d444a0940e8082a45d11f4', class: 'cardImage' }, h("img", { key: '3ecd26505803b917e92c7dc72bfa5f9147db0c71', src: this.imageSource, alt: "Blog Image" }))), h("article", { key: 'bc3eb2077a630577aa206b4d915ddcb085c3569f', class: 'cardText' }, h("p", { key: '318e6f24d4b721fbe0dbf235a18553669c421148' }, this.date), h("header", { key: '42184dfa185d8c44f7898ae4a840151b80714ade' }, h("a", { key: '7007fe885e3da3ea909595fac3e2752302ccd248', href: this.link }, h("h2", { key: '470e39a906c5f3ad6834319f65611847819f7b7c' }, this.blogTitle))))));
+        return (h("main", { key: '0fbb45509b5c71ad601dd1e0a455d37b4550261d', class: 'card' }, h("a", { key: 'f843ef3853c8b1c9e0c9a70e49e0215383533ca7', href: this.link }, h("figure", { key: 'bab46c23351da294574b2b7945b7142073300a3e', class: 'cardImage' }, h("img", { key: '551fbea089d09b661407581d25f550d9fbaa6360', src: this.imageSource, alt: "Blog Image" }))), h("article", { key: '552cc1c981315a10d2d2a0acf852d6586c1fdf5a', class: 'cardText' }, h("p", { key: 'c9820f0ae7fefae07ea573b85646acdc9e44bf77' }, this.date), h("header", { key: '0821752a53b6723f8cad245698f480a54e7cb41b' }, h("a", { key: '921a089e8804a016594fd4b360900f8e944ba9a5', href: this.link }, h("h2", { key: '9a4b572635138386bb2701fb0b13537a7fe99541' }, this.blogTitle))))));
     }
     static get is() { return "ni-blog-card"; }
     static get encapsulation() { return "shadow"; }

@@ -12,6 +12,7 @@
 | `cardDescription` | `card-description` |             | `string` | `undefined` |
 | `cardTitle`       | `card-title`       |             | `string` | `undefined` |
 | `image`           | `image`            |             | `string` | `undefined` |
+| `link`            | `link`             |             | `string` | `undefined` |
 
 
 ----------------------------------------------

@@ -1,4 +1,12 @@
 
+let cancelButton = document.getElementById("cookieCancel");
+cancelButton.addEventListener("click", ()=> {
+    document.getElementById("cookieContainer").style.display = "none";
+})
+
+
+
+
 (function () {
     /* ADDING THE SCRIPT TAG WITH THE JS FILE*/
     var cronyScript = document.createElement("script");
@@ -19,3 +27,4 @@ function connectServer() {
             button.style.display = "none"
         }
 }
+

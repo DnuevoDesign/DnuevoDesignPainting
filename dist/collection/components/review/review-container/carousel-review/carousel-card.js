@@ -9,7 +9,7 @@ export class CarouselCard {
         for (let i = 0; i < this.numberStars; i++) {
             ratingStars.push(h("i", { class: "fa-solid fa-star star" }));
         }
-        return (h("main", { key: '91ff0895d62311cd7358d64275ccc47f3d3b7fcc', id: "carouselCard" }, h("span", { key: 'fc622f9cc93e8820477a406d169758b26551a2d9', class: "reviewSiteLogo" }, h("img", { key: '8364e3a8aea5278d1ca9c02bf3e11dd98abf6a99', src: this.siteLogo, alt: "Review Site Logo" })), h("div", { key: '2031701ed85ef27c1f78a9462845bc1d6be99fef', class: "starsContainer" }, ratingStars), h("p", { key: 'eb8c77d0147dead9a63dc2da03ee9f5603f7aca4' }, "(", this.numberStars, " out of 5)")));
+        return (h("main", { key: '0841133885cc29ac819ff03c755504e052035a09', id: "carouselCard" }, h("span", { key: '217ac93d3b10736cefa6ed95d2a995d3da909955', class: "reviewSiteLogo" }, h("img", { key: 'b924754d530579598e8f3eae974116c905dff1a8', src: this.siteLogo, alt: "Review Site Logo" })), h("div", { key: 'f05ee19f70b0e8f62c4fae9b9658cf5c6035054f', class: "starsContainer" }, ratingStars), h("p", { key: 'afb4c8deb06c9297285365ab2532c1abc410c828' }, "(", this.numberStars, " out of 5)")));
     }
     static get is() { return "ni-carousel-card"; }
     static get originalStyleUrls() {

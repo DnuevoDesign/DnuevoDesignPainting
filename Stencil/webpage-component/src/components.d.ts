@@ -14,6 +14,7 @@ export namespace Components {
         "cardDescription": string;
         "cardTitle": string;
         "image": string;
+        "link": string;
     }
     interface NiBlogCard {
         "blogTitle": string;
@@ -100,6 +101,7 @@ declare namespace LocalJSX {
         "cardDescription"?: string;
         "cardTitle"?: string;
         "image"?: string;
+        "link"?: string;
     }
     interface NiBlogCard {
         "blogTitle"?: string;

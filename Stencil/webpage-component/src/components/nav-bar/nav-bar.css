@@ -39,7 +39,7 @@ figure {
 
     h2 {
         width: 100%;
-        font-size: 1rem;
+        font-size: clamp(.8rem, 3vw, 1.2rem);
         text-align: center;
         color: white;
         font-weight: 300;
@@ -48,6 +48,28 @@ figure {
 }
     
 
+
+.mainMenu {
+    position: relative;
+    top: 30px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    list-style-type: none;
+
+    a {
+        text-decoration: none;
+
+        padding: 10px;
+        margin: 0 10px;
+
+        font-size: clamp(1.3rem, 3vw,1.5rem);
+        font-family: ogg;
+        color: black;
+    }
+}
 
 @media (min-width: 768px) {
   /* ONLY FOR SMALL SCREEN */
@@ -66,7 +88,6 @@ figure {
     main {
         position: relative;
 
-
     }
 
     .contactButton {
@@ -77,27 +98,7 @@ figure {
     }
 
 
-    .mainMenu {
-        position: relative;
-        top: 30px;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-content: center;
 
-        list-style-type: none;
-
-        a {
-            text-decoration: none;
-
-            padding: 10px;
-            margin: 0 10px;
-
-            font-size: clamp(1rem, 2vw +  1rem, 1.8rem);
-            font-family: ogg;
-            color: black;
-        }
-    }
 
     
 
@@ -137,27 +138,6 @@ figure {
         margin-right: 5px;
     }
 
-
-    .mainMenu {
-        position: relative;
-        top: 30px;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-
-        list-style-type: none;
-
-        a {
-            text-decoration: none;
-            padding: 10px;
-
-            font-size: 20px;
-            color: black;
-        }
-    }
-
-    
 
 
     .dropDownMenu {
@@ -234,6 +214,7 @@ figure {
 
     .nestListItem {
         height: 430px;
+
         overflow: hidden;
 
         transition: height 300ms ease-in-out;
@@ -241,7 +222,7 @@ figure {
 
     .nestListItem ul {
         margin-top: 20px;
-
+        width: auto;
         
         li {
             border: 0;
@@ -250,6 +231,7 @@ figure {
 
             a {
                 font-size: 20px;
+                font-weight: 300;
                 padding: 20px 0px;
 
             }

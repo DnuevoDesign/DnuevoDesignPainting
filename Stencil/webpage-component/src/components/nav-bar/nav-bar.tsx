@@ -36,7 +36,6 @@ export class NavBar {
 
         nestedListItem = (
             <div class={`nestListItem ${this.isNestListItemOpen ? "" : "hideListItem"}` } >
-                <h3>Painting</h3>
                 <ul>
                     <li><a href="https://dnuevodesign.com/public/pages/painting-services/residential-interior.html">Residential Interior Painting</a></li>
                     <li><a href="https://dnuevodesign.com/public/pages/painting-services/commercial-painting.html">Commercial Painting</a></li>

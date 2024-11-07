@@ -4,9 +4,10 @@ export class Card {
         this.image = undefined;
         this.cardTitle = undefined;
         this.cardDescription = undefined;
+        this.link = undefined;
     }
     render() {
-        return (h("main", { key: 'ee1e344731f508a7a389aab7d9f8b5d87f73e1b8', class: "aboutCard" }, h("article", { key: 'aed88402ab5c7748f533a2197e99eb7d680019cc' }, h("img", { key: '34b6678a0143239ee8aa24f0ce6b6b8bd1987805', src: this.image, alt: "About Us Image" }), h("h3", { key: 'c1718698001b7ca9aae88222b56931789a2974bc' }, this.cardTitle), h("p", { key: 'e093555a9cedba80a63c53586c339d08cd2252e1' }, this.cardDescription))));
+        return (h("main", { key: '0ada3ff59918d3913a054fdf5db618656fbcb433', class: "aboutCard" }, h("a", { key: 'bc935995e3774374b4fc610ac8d7f6ed7d922473', href: this.link }, h("article", { key: '9d0708fc456b8fc6904caaa46306c251ea10f723' }, h("img", { key: '1b6e9c697494d2c831e2704f7c0c2d86cd272306', src: this.image, alt: "About Us Image" }), h("h3", { key: 'bceb8390b5a45c698b7712788aeff2e7fc246852' }, this.cardTitle), h("p", { key: '62b9a22506898eed34198225a4f662fb3b9627bb' }, this.cardDescription)))));
     }
     static get is() { return "ni-about-us-card"; }
     static get encapsulation() { return "shadow"; }
@@ -71,6 +72,23 @@ export class Card {
                     "text": ""
                 },
                 "attribute": "card-description",
+                "reflect": false
+            },
+            "link": {
+                "type": "string",
+                "mutable": false,
+                "complexType": {
+                    "original": "string",
+                    "resolved": "string",
+                    "references": {}
+                },
+                "required": false,
+                "optional": false,
+                "docs": {
+                    "tags": [],
+                    "text": ""
+                },
+                "attribute": "link",
                 "reflect": false
             }
         };

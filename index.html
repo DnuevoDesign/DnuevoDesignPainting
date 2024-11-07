@@ -61,33 +61,31 @@
           
     </section>
 
-    <div id="cookieRequest">
-      <h2>This website uses cookies and session record</h2>
-      <p>We use cookies and session records to personalize UI/UX and ads, and analyze our traffic. We do not share this information with third parties. </p>
-      
-      <div id="buttonContainer">
-          <button onclick="connectServer()">
-              Allow
-          </button>
+
+
+    <section id="choose" class="bannerContainer">
+      <div class="banner">
+        <figure><img src="/public/images/5star-banner.png" alt="5 star banner"></figure>
+        <article>
+          <h2>We Are a 5-Star Site!</h2>
+          <p>Rated 5 stars across multiple trusted platforms, including Google, Yelp and many more!</p>
+        </article>
       </div>
-    </div>
+      <div class="banner">
+        <figure><img src="/public/images/customer-satisfaction.png" alt="5 star banner"></figure>
+        <article>
+          <h2>Customer Satisfaction First!</h2>
+          <p>Committed to your satisfaction, we ensure a positive experience every time.</p>
+        </article>
+      </div>
+    </section>
 
 
 
 
+    <main class="normalContainer">
+    <section id="about" class="nateContainer">
 
-
-
-
-
-
-
-    <section id="about">
-         <div class="testimonial-heading">
-            <span> </span>
-            <h4>Our Services</h4>
-         </div>
-   
         <ni-about-us-card
             image = "/public/images/painting-service/main-residential-interior/residential-interior.png"
             card-title = "Residential Interior Painting"
@@ -129,18 +127,17 @@
       card-description = "Transform your garage with our durable epoxy flooring services! Our expert team applies high-quality epoxy that enhances the look and functionality of your space, providing a sleek, resilient finish that withstands wear and tear. Perfect for garages and more, experience a seamless blend of style and strength."
       ></ni-about-us-card>
 
-    </section>
+        
 
+    </section>
+  </main>
 
 
 
 
 
       <section id="gallery">
-         <div class="testimonial-heading">
-            <span></span>
-            <h4>GALLERY</h4>
-         </div>
+
          <main class='gallery' ">
             <div class='item nohover' data-pos='0'><img src="/public/images/logo/logo-icon-lg.png"></div>
             <div class='item' data-pos='1'><img src="/public//images/gallery/image-1.JPG"></div>
@@ -162,10 +159,7 @@
 
    
        <section id="reviews">
-         <div class="testimonial-heading">
 
-            <h4>Reviews</h4>
-          </div>
          <span id="leftArrow"><button id="leftButton" class="fas fa-arrow-left"></button></span>
          <main class="reviewContainer" >
            <!--GENERATED CONTENT DYNAMICALLY-->
@@ -250,7 +244,20 @@
           </div>
 
 
-
+          
+    <div id="cookieContainer">
+      <div id="cookieRequest">
+        <span id="cookieCancel"><i class="fa-solid fa-x"></i></span>
+        <h2>This website uses cookies and session record</h2>
+        <p>We use cookies and session records to personalize UI/UX and ads, and analyze our traffic. We do not share this information with third parties. </p>
+        
+        <div id="buttonContainer">
+            <button onclick="connectServer()">
+                Allow
+            </button>
+        </div>
+      </div>
+    </div>
 
           
           

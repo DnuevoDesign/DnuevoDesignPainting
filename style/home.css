@@ -1,37 +1,20 @@
 * {
    box-sizing: border-box;
 }
-body{
-    margin: 0;
-    background-color: #30475E;
-    color:#ECECEC ;
-}
+   body{
+      margin: 0;
+
+   }
 
 
+   .nateContainer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-row-gap: 20px;
+      margin: 0 auto;
+      padding: 0;
 
-#about {
-   background-color: #ECECEC;
-   padding-top: 5%;
-   padding-bottom: 5%;
-
-   position: relative;
-
-}
-#gallery {
-   padding-top: 10%;
-   padding-bottom: 5%;
-
-   margin: 10% 0%;
-
-   position: relative;
-   background-color: #ECECEC;
-}
-
-#reviews {
-
-   padding-top: 5%;
-   padding-bottom: 5%;
-}
+   }
 
 
    #home {
@@ -44,9 +27,8 @@ body{
       padding-top: 10vh;
       padding-bottom: 100px;
 
-      height: 85vh;
+      height: 100%;
 
-      margin-bottom: 250px;
 
       border-bottom: 5px ridge  rgba(186, 187, 167, 0.842);;
       
@@ -74,7 +56,7 @@ body{
       
       font-size: 90%;
       width: 100%;
-      justify-content: space-between;
+      justify-content: center;
       
       span {
    
@@ -82,7 +64,7 @@ body{
          padding: 1.5vw 2vw;
          border: .1px solid black;
          border-radius: 2px;
-         background: linear-gradient(135deg, #bba283, #d2b894);
+         background: linear-gradient(#ded9d2, #aea69a);;
          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 
          
@@ -99,6 +81,72 @@ body{
       }
     }
 
+
+    .bannerContainer {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+
+      width: 100%;
+      height: auto;
+      padding: 50px 0px;
+      background: linear-gradient(#ded9d2, #aea69a44);
+      box-shadow: 10px 0 30px 5px lightgray;
+
+      margin: 5% 0px;
+    }
+    .normalContainer {
+      width: 100%;
+      height: auto;
+      padding: 50px 0px;
+      background: linear-gradient(#ded9d2, #aea69a44);
+      box-shadow: 10px 0 30px 5px lightgray;
+
+      margin: 5% 0px;
+    }
+
+    .banner {
+      width: 450px;
+      height: 100%;
+
+      article {
+         text-align: center;
+         h2 {
+            font-size: clamp(1.4rem, 3vw ,1.3rem);
+         }
+         p {
+            margin: 0 auto;
+            width: 90%;
+            font-size: .8rem;
+            font-weight: 300;
+         }
+      }
+    }
+    .banner figure {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      margin-right: 50px;
+
+      img {
+         width: 200px;
+         height: 200px;
+      }
+    }
+
+
+@media (min-width: 1440px) {
+   .nateContainer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-row-gap: 20px;
+      width: 80%;
+      margin: 0 auto;
+      
+
+   }
+}
 
 @media (min-width: 768px) and (max-width: 1040px) {
 
@@ -114,27 +162,20 @@ body{
       justify-content: space-between;
       
       span {
-   
-         margin: 0 10vw;
+      
          padding: .5vw 1vw;
-         border: .1px solid black;
-         border-radius: 2px;
-         background: linear-gradient(135deg, #bba283, #d2b894);
-         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-
-         
-         a {
-            
-            letter-spacing: 3px;
-            text-decoration: none;
-            color: black;
-
-            font-weight: 600;
-
-            white-space: nowrap;
-         }
       }
     }
+
+    .nateContainer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 20px;
+      width: 100%;
+      margin: 0 auto;
+      
+
+   }
 
 }
 
@@ -148,10 +189,7 @@ body{
    
          margin: 0 10vw;
          padding: 12px 9px;
-         border: .1px solid black;
-         border-radius: 2px;
-         background: linear-gradient(135deg, #bba283, #d2b894);
-         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+
 
          
          a {
@@ -166,6 +204,14 @@ body{
          }
       }
     }
+    .nateContainer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 20px;
+      margin: 0 auto;
+      
+   }
+
 }
 
 @media (max-width: 490px) {
@@ -178,11 +224,9 @@ body{
       z-index: 0;
 
       padding-top: 10vh;
-      padding-bottom: 100px;
 
-      height: 85vh;
 
-      margin-bottom: 300px;
+      height: 100%;
 
       border-bottom: 5px ridge  rgba(186, 187, 167, 0.842);;
       
@@ -216,23 +260,17 @@ body{
    
          margin: 0 20px;
          padding: 8px 5px;
-         border: .1px solid black;
-         border-radius: 2px;
-         background: linear-gradient(135deg, #bba283, #d2b894);
-         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 
-         
-         a {
-            
-            letter-spacing: 3px;
-            text-decoration: none;
-            color: black;
-
-            font-weight: 600;
-
-            white-space: nowrap;
-         }
       }
     }
+
+    .nateContainer {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 20px;
+      margin: 0 auto;
+      
+
+   }
 
 }

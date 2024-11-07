@@ -1,6 +1,6 @@
 import { p as proxyCustomElement, H, h } from './p-1ef653b0.js';
 
-const aboutUsCardCss = "\n\n.aboutCard {\n    box-sizing: border-box;\n \n    display: inline-block;\n \n    width: 400px;\n    height: 300px;\n \n \n    padding: 20px;\n    margin: 0px 30px;\n \n    img {\n \n       border-radius: 5px;\n       width: 50%;\n       height: 50%;\n \n    }\n \n    article {\n \n       h3 {\n          font-size: 1.5rem;\n          margin: 0;\n       }\n    }\n }\n \n \n /* LARGE RESPONSIVE */\n @media screen and (max-width: 1040px) {\n    .aboutCard {\n       box-sizing: border-box;\n       width: 80%;\n       height: 300px;\n    \n       padding: 0px;\n       margin: 20px 30px;\n    \n       img {\n \n          width: 40%;\n          height: 40%;\n       }\n    \n       article {\n    \n          h3 {\n             font-size: 1.8rem;\n             margin: 10px 0px;\n          }\n       }\n    }\n }\n \n /* MEDIUM RESPONSIVE */\n @media screen and (max-width: 768px) {\n    \n }\n \n \n \n /* SMALL RESPONSIVE */\n @media screen and (max-width: 490px) {\n    .aboutCard {\n       width: 100%;\n       height: 300px; \n       padding: 20px;\n       margin: 50px 25px;\n \n \n       img {\n          width: 50%;\n          height: 50%;\n       }\n \n       article {\n \n          h3 {\n             font-size: 1.5rem;\n             margin: 0;\n          }\n       }\n }\n }";
+const aboutUsCardCss = "\r\n\r\n.aboutCard {\r\n    box-sizing: border-box;\r\n \r\n    display: inline-block;\r\n \r\n    min-width: 350px;\r\n    max-width: 400px;\r\n    height: auto;\r\n\r\n \r\n    padding: 20px;\r\n    margin: 0px 10px;\r\n\r\n\r\n\r\n    transition: box-shadow 300ms ease-out; \r\n   \r\n    cursor: pointer;\r\n\r\n    \r\n    img {\r\n \r\n       border-radius: 5px;\r\n       width: 100%;\r\n       height: 150px;\r\n\r\n       transition: width 300ms ease-in, height 300ms ease-in;\r\n \r\n    }\r\n \r\n    article {\r\n      box-sizing: border-box;\r\n      color: black;\r\n       h3 {\r\n          text-decoration: underline;\r\n          text-wrap: nowrap;\r\n          font-size: 1rem;\r\n          margin: 0;\r\n       }\r\n       p {\r\n         font-size: .75rem;\r\n         margin: 0;\r\n         font-weight: 200;\r\n         text-wrap: pretty;\r\n         line-height: 1.2;\r\n       }\r\n    }\r\n }\r\n\r\n.aboutCard:hover {\r\n   box-shadow: inset 0 0 10px 10px lightgray;\r\n\r\n   img {\r\n      width: 100.5%;\r\n      height: 155px;\r\n      transition: width 300ms ease-in, height 300ms ease-in;\r\n   }\r\n\r\n   transition: box-shadow 300ms ease-in;\r\n\r\n}\r\n\r\n \r\n\r\n\r\n /* SMALL RESPONSIVE */\r\n @media screen and (max-width: 490px) {\r\n   .aboutCard {\r\n      margin: 0px 0px;\r\n   }\r\n }";
 const NiAboutUsCardStyle0 = aboutUsCardCss;
 
 const Card = /*@__PURE__*/ proxyCustomElement(class Card extends H {
@@ -11,15 +11,17 @@ const Card = /*@__PURE__*/ proxyCustomElement(class Card extends H {
         this.image = undefined;
         this.cardTitle = undefined;
         this.cardDescription = undefined;
+        this.link = undefined;
     }
     render() {
-        return (h("main", { key: 'ee1e344731f508a7a389aab7d9f8b5d87f73e1b8', class: "aboutCard" }, h("article", { key: 'aed88402ab5c7748f533a2197e99eb7d680019cc' }, h("img", { key: '34b6678a0143239ee8aa24f0ce6b6b8bd1987805', src: this.image, alt: "About Us Image" }), h("h3", { key: 'c1718698001b7ca9aae88222b56931789a2974bc' }, this.cardTitle), h("p", { key: 'e093555a9cedba80a63c53586c339d08cd2252e1' }, this.cardDescription))));
+        return (h("main", { key: '0ada3ff59918d3913a054fdf5db618656fbcb433', class: "aboutCard" }, h("a", { key: 'bc935995e3774374b4fc610ac8d7f6ed7d922473', href: this.link }, h("article", { key: '9d0708fc456b8fc6904caaa46306c251ea10f723' }, h("img", { key: '1b6e9c697494d2c831e2704f7c0c2d86cd272306', src: this.image, alt: "About Us Image" }), h("h3", { key: 'bceb8390b5a45c698b7712788aeff2e7fc246852' }, this.cardTitle), h("p", { key: '62b9a22506898eed34198225a4f662fb3b9627bb' }, this.cardDescription)))));
     }
     static get style() { return NiAboutUsCardStyle0; }
 }, [1, "ni-about-us-card", {
         "image": [1],
         "cardTitle": [1, "card-title"],
-        "cardDescription": [1, "card-description"]
+        "cardDescription": [1, "card-description"],
+        "link": [1]
     }]);
 function defineCustomElement$1() {
     if (typeof customElements === "undefined") {
