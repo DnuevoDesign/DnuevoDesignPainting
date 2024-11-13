@@ -1,0 +1,74 @@
+
+
+#contentSanDiego {
+    background: linear-gradient(#ded9d2, #aea69a);;
+    width: 100%;
+    margin: 0;
+}
+
+@media (max-width: 1040px) {
+    #contentSanDiego {
+        padding: 50px 10px;
+    }
+
+    #contentSanDiego article:nth-child(n+2){
+        margin: 80px 0px;
+    }
+    #contentSanDiego h2 {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+    #contentSanDiego h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0;
+    }
+    #contentSanDiego p {
+        text-wrap: balance;
+        font-weight: 200;
+        line-height: 25px;
+
+        font-size: .85rem;
+        margin: 2px 0;
+
+        bold {
+            font-weight: 400;
+        }
+    }
+}
+
+
+
+@media (min-width: 1040px) {
+    #contentSanDiego {
+        padding: 50px 10%;
+    }
+
+    #contentSanDiego article:nth-child(n+2){
+        margin: 80px 0px;
+    }
+    #contentSanDiego h2 {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    #contentSanDiego h3 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin: 0;
+    }
+    #contentSanDiego li {
+        margin: 15px 0;
+    }
+    #contentSanDiego p {
+        text-wrap: balance;
+        font-weight: 200;
+        line-height: 25px;
+
+        font-size: 1rem;
+        margin: 2px 0;
+
+        bold {
+            font-weight: 400;
+        }
+    }
+}
