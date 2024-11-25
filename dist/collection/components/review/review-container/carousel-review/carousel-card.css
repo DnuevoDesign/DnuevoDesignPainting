@@ -1,0 +1,72 @@
+#carouselCard {
+
+    width: 300px;
+    animation: scroll 35s linear infinite; 
+ 
+ 
+    p {
+       
+       text-align: center;
+       margin: 5px 0px;
+       padding: 0;
+       font-weight: 600;
+    }
+ 
+    .reviewSiteLogo {
+       display: flex;
+       justify-content: center;
+       img {
+          width: 100px;
+ 
+       }
+    }
+ 
+ }
+ 
+ 
+ .starsContainer {
+    text-align: center;
+    color: #FFD43B;
+    margin: 5px 0px;
+ }
+ 
+
+
+ @media screen and (max-width: 768px) {
+
+    #carouselCard {
+ 
+       width: 300px;
+       margin: 0px 10px;
+       animation: scroll 20s linear infinite; 
+    
+    
+       p {
+          
+          text-align: center;
+          margin: 5px 0px;
+          padding: 0;
+          font-weight: 600;
+       }
+    
+       .reviewSiteLogo {
+          display: flex;
+          justify-content: center;
+          img {
+             width: 100px;
+    
+          }
+       }
+    
+    }
+ }
+ 
+ 
+ @keyframes scroll {
+    0% {
+       transform: translateX(80vw);
+    }
+    100% {
+       transform: translateX(-95vw);
+    }
+ }

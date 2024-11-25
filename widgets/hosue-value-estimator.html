@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estimating</title>
+</head>
+<body>
+    
+    <main> 
+        <h2>House Value Estimator</h2>
+        <div id="option-buttons">
+            <button >Interior</button> <button >Both</button> <button >Exterior</button>
+        </div>
+        <div>
+            <!--Interior-->
+            <div id="interior-container" style="display: none;">
+                <div>
+                    <label for="room-number">Number of Room?</label>
+                    <select name="room-number" id="room-number">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">+4</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="room-size">Average Room Size?</label>
+                    <select name="room-size" id="room-size">
+                        <option value="100">100sq ft.</option>
+                        <option value="250">250sq ft.</option>
+                        <option value="350">350sq ft.</option>
+                        <option value="450">+450sq ft.</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+        <div id="exterior-container" style="display: none;">
+            <!--Exterior-->
+            <div id="exterior-container">
+                <label for="home_size">House Size in Square Feet?</label>
+                <select name="home_size" id="home_size">
+                    <option value="850">850sq ft.</option>
+                    <option value="950">950sq ft.</option>
+                    <option value="1200">1,200sq ft.</option>
+                    <option value="1500">1,500sq ft.</option>
+                    <option value="2000">+2,000sq ft.</option>
+                </select>
+            </div>
+        </div>
+        <div id="home_value_container" style="display: none;">
+            <h3>Current House Value</h3>
+            <input type="text" name="home_value" id="home_value"><span>$</span>
+            <div>
+                <button id="estimator_submit">Submit</button>
+            </div>
+        </div>
+
+
+        <!--FINAL ESTIMATE-->
+        <div>
+            <h3>Estimated Return On Investment</h3>
+            <h3>Cost: </h3><span></span>
+            <h3>Increase in Value: </h3><span></span>
+            <h3>ROI: </h3><span></span>
+        </div>
+    </main>
+
+    
+    <script>
+        let number_of_rooms = interior_estimate = avg_room_size = home_size = current_house_value = null;
+
+
+        let option_buttons = document.getElementById('option-buttons');
+        option_buttons = option_buttons.querySelectorAll('button')
+
+        for(let i = 0; i < option_buttons.length; i++) {
+            option_buttons[i].addEventListener('click', () => {
+                const button = i;
+
+                switch(button) {
+                    case 0 : {
+
+                        home_size = null;
+                        document.getElementById('interior-container').style.display = 'block'
+                        document.getElementById('exterior-container').style.display = 'none'
+                    }   
+                        break;
+                    case 1 : {
+                        document.getElementById('interior-container').style.display = 'block'
+                        document.getElementById('exterior-container').style.display = 'block'
+                    }
+                        break;
+                    case 2 : {
+                        number_of_rooms = null;
+                        avg_room_size = null;
+
+                        document.getElementById('interior-container').style.display = 'none'
+                        document.getElementById('exterior-container').style.display = 'block'
+
+                    }
+                        break;
+                    default: console.log("Error: Option-Button")
+                }
+                document.getElementById('home_value_container').style.display = 'block';
+            })
+        }
+
+
+
+        let submit = document.getElementById('estimator_submit').addEventListener('click', () => {
+            const paint_cost = 3;
+            number_of_rooms = document.getElementById('room-number').value;
+            avg_room_size = document.getElementById('room-size').value;
+
+            console.log(number_of_rooms, avg_room_size)
+            const room_calc_value = (number_of_rooms * avg_room_size) * paint_cost;
+
+            home_size = document.getElementById('home_size');
+            const exterior_house_value = home_size * paint_cost;
+
+            current_house_value = document.getElementById('home_value')
+
+            
+        })
+    </script>
+</body>
+</html>

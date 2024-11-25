@@ -1,0 +1,116 @@
+body, html {
+    margin: 0;
+    font-family: Arial, 'Georgia', serif; 
+
+}
+
+#article-container {
+    padding: 12% 0 8% 0;
+}
+
+#blog-heading h1 {
+    text-align: left;
+    text-wrap: pretty;
+    line-height: 1.2;
+    font-weight: bold;
+    font-size: 4.5rem;
+}
+
+
+#article-container article p {
+    margin: 35px 0;
+    line-height: 1.7rem;
+    font-weight: 400;
+}
+#article-container article h2 {
+    position: relative;
+    bottom: -25px;
+}
+
+#article-container article ul {
+
+    h3 {
+        margin: 0;
+    }
+    p {
+        margin: 0 0 30px 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+#article-container {
+    padding: 38% 0 10% 5px;
+    height: auto;
+    box-sizing: border-box;
+
+}
+
+/*BLOG HEADING*/
+#blog-heading h1 {
+    font-size: clamp(1.5rem, 8vw, 2.5rem);
+    padding: 0 10px;
+}
+#blog-heading figure {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+#blog-heading figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+#blog-heading div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    color: #555;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid  black;
+    padding: 10px 10px;
+    margin-top: 10px;
+}
+
+}
+
+@media (min-width: 768px) {
+    #article-container article {
+        padding: 0 15%;
+    }
+    #article-container {
+        height: auto;
+        box-sizing: border-box;
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    /*BLOG HEADING*/
+    #blog-heading h1 {
+        font-size: clamp(2.5rem, 2.5vw, 3rem);
+        padding: 0 10px;
+    }
+    #blog-heading figure {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    #blog-heading figure img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ccc;
+    }
+    #blog-heading div {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.8rem;
+        color: #555;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid  black;
+        padding: 10px 10px;
+        margin-top: 10px;
+    }
+    
+}

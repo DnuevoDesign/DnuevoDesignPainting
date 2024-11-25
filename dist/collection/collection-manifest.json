@@ -1,0 +1,18 @@
+{
+  "entries": [
+    "components/about-us/card/about-us-card.js",
+    "components/blog/blog-card/blog-card.js",
+    "components/nav-bar/nav-bar.js",
+    "components/nav-bar-bootstrap/nav-bar.js",
+    "components/review/review-container/review-container.js",
+    "components/review/review-container/carousel-review/carousel-card.js",
+    "components/reviews/reviews-box.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "4.22.1",
+    "typescriptVersion": "5.5.4"
+  },
+  "collections": [],
+  "bundles": []
+}
