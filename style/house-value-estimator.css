@@ -1,0 +1,90 @@
+        /* Styles for the House Value Estimator */
+        #house-estimator {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #house-estimator legend {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        #house-estimator h2 {
+            color: #343a40;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        #option-buttons .btn {
+            margin: 5px;
+        }
+
+        #house-estimator .input-group-text {
+            background-color: #f1f1f1;
+        }
+
+        #house-estimator .input-group input {
+            border-radius: 0.375rem;
+        }
+
+        .section-heading {
+            font-size: 1.2rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .card {
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            color: #333;
+        }
+
+        .card span {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            width: 100%;
+            font-size: 1.1rem;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        .note {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #house-estimator {
+                padding: 20px;
+            }
+
+            #house-estimator h2 {
+                font-size: 1.5rem;
+            }
+
+            .section-heading {
+                font-size: 1rem;
+            }
+        }

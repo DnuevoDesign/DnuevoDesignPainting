@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="/style/blog-styles.css">
     <link rel="stylesheet" href="/style/footer.css">
     <link rel="stylesheet" href="/style/record-style.css">
+    <link rel="stylesheet" href="/style/house-value-estimator.css">
 
     <script type="module" src="/dist/webpage-component/webpage-component.esm.js"></script>
     <script type="module" src="/dist/webpage-component/webpage-component.js"></script>
@@ -136,6 +137,97 @@
                 </p>
             </main>
         </article>
+
+
+
+        <div id="house-estimator">
+          <h2>House Value Estimator</h2>
+  
+          <legend>Estimate Your Home Improvement ROI</legend>
+  
+          <!-- Option Buttons -->
+          <div id="option-buttons" class="btn-group" role="group" aria-label="House Type">
+              <button class="btn btn-primary">Interior</button>
+              <button class="btn btn-primary">Both</button>
+              <button class="btn btn-primary">Exterior</button>
+          </div>
+  
+          <!-- Interior Selection -->
+          <div id="interior-container" style="display: none;">
+              <div class="card">
+                  <label for="room-number">Number of Rooms?</label>
+                  <select name="room-number" id="room-number" class="form-select">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">+4</option>
+                  </select>
+              </div>
+  
+              <div class="card">
+                  <label for="room-size">Average Room Size?</label>
+                  <select name="room-size" id="room-size" class="form-select">
+                      <option value="100">100sq ft.</option>
+                      <option value="250">250sq ft.</option>
+                      <option value="350">350sq ft.</option>
+                      <option value="450">+450sq ft.</option>
+                  </select>
+              </div>
+          </div>
+  
+          <!-- Exterior Selection -->
+          <div id="exterior-container" style="display: none;">
+              <div class="card">
+                  <label for="home_size">House Size in Square Feet?</label>
+                  <select name="home_size" id="home_size" class="form-select">
+                      <option value="850">850sq ft.</option>
+                      <option value="950">950sq ft.</option>
+                      <option value="1200">1,200sq ft.</option>
+                      <option value="1500">1,500sq ft.</option>
+                      <option value="2000">+2,000sq ft.</option>
+                  </select>
+              </div>
+          </div>
+  
+          <!-- Home Value Input -->
+          <div id="home_value_container" style="display: none;">
+              <div class="card">
+                  <label for="home_value">Current Home Value ($)</label>
+                  <div class="input-group">
+                      <span class="input-group-text">$</span>
+                      <input id="home_value" type="number" class="form-control" aria-label="Amount (to the nearest dollar)" required>
+                  </div>
+              </div>
+  
+              <div>
+                  <button id="estimator_submit" class="btn btn-primary">Submit</button>
+              </div>
+          </div>
+  
+          <!-- Final Estimate Section -->
+          <div class="card">
+              <div class="section-heading">Estimated Return On Investment</div>
+              <div class="row">
+                  <div class="col">
+                      <h3>Cost:</h3>
+                      <span id="cost-value">$0.00</span>
+                  </div>
+                  <div class="col">
+                      <h3>Increase in Value:</h3>
+                      <span id="increase-value">$0.00</span>
+                  </div>
+              </div>
+              <div>
+                  <h3>ROI:</h3>
+                  <span id="roi-value">0%</span>
+              </div>
+          </div>
+  
+          <!-- Note -->
+          <div class="note">
+              <p><strong>Note:</strong> This is just an estimate based on the information provided. Actual costs and returns may vary. Please consult with a professional for a more accurate estimate.</p>
+          </div>
+      </div>
     </div>    
            
     <footer class="footer" >
@@ -211,7 +303,7 @@
         </div>
       </div>
 
-
+    <script src="/script/house-value-estimator.js"></script>
     <script src="/script/RR/record.js"></script>
     <script src="/script//RR/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
